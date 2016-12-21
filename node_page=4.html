@@ -1,0 +1,440 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-998.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+<link rel="alternate" type="application/rss+xml" title="OpESR RSS" href="/rss.xml" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+  <title>OpESR | Operation Empire State Rebellion</title>
+  <link type="text/css" rel="stylesheet" href="/sites/default/files/css/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/sites/default/files/css/css_xi_BRWGJrI1YNPkmKHvIQffmbwzxHXwWoqWT2ZHqPo4.css" media="screen" />
+<link type="text/css" rel="stylesheet" href="/sites/default/files/css/css_0_KYL24ZFbw2f7LbtKfXhnOyQoZOKYWHiXsWj2DCPK8.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/sites/default/files/css/css_7_nIe9s9x7xDr3xevw0X_MvPGE877wzuC0A8oz6u2aQ.css" media="all" />
+
+<!--[if lt IE 8]>
+<link type="text/css" rel="stylesheet" href="/sites/default/files/css/css_VyKHcoC2vkE6vSZy1096yGnGRXchk2qXI7pn80r5cvw.css" media="all" />
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="/sites/default/files/css/css_rpktEuoZ8hH5vx0DqBlzjSTIdARm7hjmUJO1joR1VoY.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/sites/default/files/css/css_24VwYIeQPnPJg9p4mvTlo-SPhof77pbbsMlbHgUmW90.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/sites/default/files/css/css_2THG1eGiBIizsWFeexsNe1iDifJ00QRS9uSd03rY9co.css" media="print" />
+
+<!--[if lte IE 7]>
+<link type="text/css" rel="stylesheet" href="/themes/bartik/css/ie.css?" media="all" />
+<![endif]-->
+
+<!--[if IE 6]>
+<link type="text/css" rel="stylesheet" href="/themes/bartik/css/ie6.css?" media="all" />
+<![endif]-->
+  <script type="text/javascript" src="/sites/default/files/js/js_Xjzh1hVfcgVAixhmmB6Go8TUMPOiprA-2vkC-oWXARQ.js"></script>
+<script type="text/javascript" src="/sites/default/files/js/js_CnVjeK75WybhZPt5LIjxPFFChsSvirFJZ4QJHLcK6Rw.js"></script>
+<script type="text/javascript" src="/sites/default/files/js/js_e8hHfTVXzJDYrSQ-AX71rxVEu2lHsePMOGYVVAFfhb8.js"></script>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?v=3&amp;language=en&amp;sensor=false&amp;libraries=geometry"></script>
+<script type="text/javascript" src="/sites/default/files/js/js_EK2HzqYcvwJN_3XfzpfqmLOmrehDWQQ50tCdugGvUbM.js"></script>
+<script type="text/javascript" src="/sites/default/files/js/gmap_markers.js"></script>
+<script type="text/javascript" src="/sites/default/files/js/js__1DMipMcK5q7kQ59L9oD0bENBoxYuCYwMRGUdNJ-IEs.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"bartik","theme_token":"ZNM-LKlhgJ3rid3PYZETVlphJiLO8kaWKATcgJfP8-E","js":{"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/libraries\/colorbox\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/modules\/media_gallery\/colorbox-display.js":1,"sites\/all\/modules\/gmap\/js\/gmap.js":1,"http:\/\/maps.googleapis.com\/maps\/api\/js?v=3\u0026language=en\u0026sensor=false\u0026libraries=geometry":1,"sites\/all\/modules\/gmap\/js\/icon.js":1,"sites\/all\/modules\/gmap\/js\/marker.js":1,"sites\/all\/modules\/gmap\/js\/highlight.js":1,"sites\/all\/modules\/gmap\/js\/poly.js":1,"\/sites\/default\/files\/js\/gmap_markers.js":1,"sites\/all\/modules\/gmap\/js\/markerloader_static.js":1,"sites\/all\/modules\/gmap\/js\/gmap_marker.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/libraries\/colorbox\/example1\/colorbox.css":1,"sites\/all\/modules\/calendar\/css\/calendar_multiday.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/media_gallery\/media_gallery.css":1,"sites\/all\/modules\/media_gallery\/media_gallery.ie7.css":1,"sites\/all\/modules\/gmap\/gmap.css":1,"themes\/bartik\/css\/layout.css":1,"themes\/bartik\/css\/style.css":1,"themes\/bartik\/css\/colors.css":1,"themes\/bartik\/css\/print.css":1,"themes\/bartik\/css\/ie.css":1,"themes\/bartik\/css\/ie6.css":1}},"gmap":{"auto1map":{"width":"100%","height":"300px","zoom":3,"maxzoom":"14","controltype":"Large","pancontrol":1,"streetviewcontrol":0,"align":"None","maptype":"Physical","mtc":"standard","baselayers":{"Map":1,"Satellite":1,"Hybrid":1},"styles":{"line_default":["0000ff","5","45","",""],"poly_default":["000000","3","25","ff0000","45"],"highlight_color":"ff0000"},"line_colors":["#00cc00","#ff0000","#0000ff"],"behavior":{"locpick":false,"nodrag":0,"nokeyboard":1,"nomousezoom":1,"nocontzoom":0,"autozoom":0,"dynmarkers":0,"overview":0,"collapsehack":0,"scale":0,"extramarkerevents":false,"clickableshapes":false,"googlebar":0,"highlight":0},"markermode":"0","longitude":"-82.08984375","latitude":"37.3002752813443","id":"auto1map","markers":[{"latitude":40.70918,"longitude":-74.011376,"markername":"green","offset":0,"text":"\u003Cdiv class=\u0022gmap-popup\u0022\u003E\u003Ca href=\u0022\/assembly\/going-nyccamp-libertycamp-acampada\u0022\u003EGoing to #NYCCamp #libertycamp #acampada\u003C\/a\u003E\u003C\/div\u003E","autoclick":0,"opts":{"title":"New York","highlight":0,"highlightcolor":"#FF0000","animation":0}},{"latitude":40.707811,"longitude":-74.00838,"markername":"green","offset":1,"text":"\u003Cdiv class=\u0022gmap-popup\u0022\u003E\u003Ca href=\u0022\/assembly\/going-nyc-chase-rally-point\u0022\u003EGoing to #NYC #Chase Rally Point\u003C\/a\u003E\u003C\/div\u003E","autoclick":0,"opts":{"title":"New York","highlight":0,"highlightcolor":"#FF0000","animation":0}},{"latitude":28.559947,"longitude":-81.378344,"markername":"green","offset":2,"text":"\u003Cdiv class=\u0022gmap-popup\u0022\u003E\u003Ca href=\u0022\/assembly\/occupy-orlando\u0022\u003EOccupy Orlando\u003C\/a\u003E\u003C\/div\u003E","autoclick":0,"opts":{"title":"Orlando","highlight":0,"highlightcolor":"#FF0000","animation":0}},{"latitude":38.903574,"longitude":-77.045724,"markername":"green","offset":3,"text":"\u003Cdiv class=\u0022gmap-popup\u0022\u003E\u003Ca href=\u0022\/assembly\/going-dc-fed-rally-point\u0022\u003EGoing to #DC #FED Rally Point\u003C\/a\u003E\u003C\/div\u003E","autoclick":0,"opts":{"title":"Washington D.C.","highlight":0,"highlightcolor":"#FF0000","animation":0}},{"latitude":41.889354,"longitude":-87.631398,"markername":"green","offset":4,"text":"\u003Cdiv class=\u0022gmap-popup\u0022\u003E\u003Ca href=\u0022\/assembly\/going-chicago-citibank-rally-point\u0022\u003EGoing to #Chicago #Citibank Rally Point\u003C\/a\u003E\u003C\/div\u003E","autoclick":0,"opts":{"title":"Chicago","highlight":0,"highlightcolor":"#FF0000","animation":0}},{"latitude":43.038941,"longitude":-87.909616,"markername":"green","offset":5,"text":"\u003Cdiv class=\u0022gmap-popup\u0022\u003E\u003Ca href=\u0022\/assembly\/going-wi-wf-starting-point\u0022\u003EGoing to #WI #WF Starting Point\u003C\/a\u003E\u003C\/div\u003E","autoclick":0,"opts":{"title":"Milwaukee","highlight":0,"highlightcolor":"#FF0000","animation":0}},{"latitude":43.043548,"longitude":-87.908258,"markername":"green","offset":6,"text":"\u003Cdiv class=\u0022gmap-popup\u0022\u003E\u003Ca href=\u0022\/assembly\/going-wi-fed-rally-point\u0022\u003EGoing to #WI #FED Rally Point\u003C\/a\u003E\u003C\/div\u003E","autoclick":0,"opts":{"title":"Milwaukee","highlight":0,"highlightcolor":"#FF0000","animation":0}},{"latitude":43.012644,"longitude":-83.687722,"markername":"green","offset":7,"text":"\u003Cdiv class=\u0022gmap-popup\u0022\u003E\u003Ca href=\u0022\/assembly\/going-flint-chase-rally-point\u0022\u003EGoing to #Flint #Chase Rally Point\u003C\/a\u003E\u003C\/div\u003E","autoclick":0,"opts":{"title":"Flint","highlight":0,"highlightcolor":"#FF0000","animation":0}},{"latitude":35.528827,"longitude":-97.566328,"markername":"green","offset":8,"text":"\u003Cdiv class=\u0022gmap-popup\u0022\u003E\u003Ca href=\u0022\/assembly\/going-okc-bofa-rally-point\u0022\u003EGoing to #OKC #BofA Rally Point\u003C\/a\u003E\u003C\/div\u003E","autoclick":0,"opts":{"title":"Oklahoma City","highlight":0,"highlightcolor":"#FF0000","animation":0}},{"latitude":37.786845,"longitude":-122.404849,"markername":"green","offset":9,"text":"\u003Cdiv class=\u0022gmap-popup\u0022\u003E\u003Ca href=\u0022\/assembly\/going-sf-wf-rally-point\u0022\u003EGoing to #SF #WF Rally Point\u003C\/a\u003E\u003C\/div\u003E","autoclick":0,"opts":{"title":"San Francisco","highlight":0,"highlightcolor":"#FF0000","animation":0}},{"latitude":47.610496,"longitude":-122.336261,"markername":"green","offset":10,"text":"\u003Cdiv class=\u0022gmap-popup\u0022\u003E\u003Ca href=\u0022\/assembly\/going-seattle-bofa-rally-point\u0022\u003EGoing to #Seattle #BofA Rally Point \u003C\/a\u003E\u003C\/div\u003E","autoclick":0,"opts":{"title":"Seattle","highlight":0,"highlightcolor":"#FF0000","animation":0}},{"latitude":36.304821,"longitude":-82.370722,"markername":"green","offset":11,"text":"\u003Cdiv class=\u0022gmap-popup\u0022\u003E\u003Ca href=\u0022\/assembly\/occupy-johnson-city-tn\u0022\u003EOccupy Johnson City, TN\u003C\/a\u003E\u003C\/div\u003E","autoclick":0,"opts":{"title":"Johnson City","highlight":0,"highlightcolor":"#FF0000","animation":0}},{"latitude":34.000777,"longitude":-81.035056,"markername":"green","offset":12,"text":"\u003Cdiv class=\u0022gmap-popup\u0022\u003E\u003Ca href=\u0022\/assembly\/occupy-columbia\u0022\u003EOccupy Columbia \u003C\/a\u003E\u003C\/div\u003E","autoclick":0,"opts":{"title":"Columbia","highlight":0,"highlightcolor":"#FF0000","animation":0}},{"latitude":45.514718,"longitude":-122.677988,"markername":"green","offset":13,"text":"\u003Cdiv class=\u0022gmap-popup\u0022\u003E\u003Ca href=\u0022\/assembly\/stop-keystone-pipeline-pdx\u0022\u003EStop the #Keystone Pipeline #PDX\u003C\/a\u003E\u003C\/div\u003E","autoclick":0,"opts":{"title":"Portland","highlight":0,"highlightcolor":"#FF0000","animation":0}},{"latitude":36.151668,"longitude":-95.989623,"markername":"green","offset":14,"text":"\u003Cdiv class=\u0022gmap-popup\u0022\u003E\u003Ca href=\u0022\/assembly\/occupation-tulsa-ok-has-begun\u0022\u003EThe Occupation in Tulsa, OK has begun\u003C\/a\u003E\u003C\/div\u003E","autoclick":0,"opts":{"title":"Tulsa","highlight":0,"highlightcolor":"#FF0000","animation":0}},{"latitude":40.756728,"longitude":-73.974064,"markername":"green","offset":15,"text":"\u003Cdiv class=\u0022gmap-popup\u0022\u003E\u003Ca href=\u0022\/assembly\/opkissinger\u0022\u003E#OpKissinger\u003C\/a\u003E\u003C\/div\u003E","autoclick":0,"opts":{"title":"Manhattan","highlight":0,"highlightcolor":"#FF0000","animation":0}},{"latitude":39.07669,"longitude":-94.587768,"markername":"green","offset":16,"text":"\u003Cdiv class=\u0022gmap-popup\u0022\u003E\u003Ca href=\u0022\/assembly\/occupy-kansas-city-occupykc\u0022\u003E#Occupy Kansas City #OccupyKC\u003C\/a\u003E\u003C\/div\u003E","autoclick":0,"opts":{"title":"Kansas City","highlight":0,"highlightcolor":"#FF0000","animation":0}},{"latitude":40.749128,"longitude":-73.969428,"markername":"green","offset":17,"text":"\u003Cdiv class=\u0022gmap-popup\u0022\u003E\u003Ca href=\u0022\/assembly\/occupyallembassies\u0022\u003E#OccupyAllEmbassies\u003C\/a\u003E\u003C\/div\u003E","autoclick":0,"opts":{"title":"New York","highlight":0,"highlightcolor":"#FF0000","animation":0}},{"latitude":37.77919,"longitude":-122.41914,"markername":"green","offset":18,"text":"\u003Cdiv class=\u0022gmap-popup\u0022\u003E\u003Ca href=\u0022\/assembly\/sf-medical-marijuana-rally\u0022\u003ESF Medical Marijuana Rally\u003C\/a\u003E\u003C\/div\u003E","autoclick":0,"opts":{"title":"San Francisco","highlight":0,"highlightcolor":"#FF0000","animation":0}},{"latitude":33.774671,"longitude":-84.296516,"markername":"green","offset":19,"text":"\u003Cdiv class=\u0022gmap-popup\u0022\u003E\u003Ca href=\u0022\/assembly\/handsup-against-police-brutality-atlanta\u0022\u003E#HandsUp Against Police Brutality #Atlanta\u003C\/a\u003E\u003C\/div\u003E","autoclick":0,"opts":{"title":"Decatur","highlight":0,"highlightcolor":"#FF0000","animation":0}}]}}});
+//--><!]]>
+</script>
+</head>
+<body class="html front not-logged-in no-sidebars page-node featured triptych" >
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+    <div id="page-wrapper"><div id="page">
+
+  <div id="header" class="without-secondary-menu"><div class="section clearfix">
+
+    
+          <div id="name-and-slogan">
+
+                              <h1 id="site-name">
+              <a href="/" title="Home" rel="home"><span>OpESR</span></a>
+            </h1>
+                  
+                  <div id="site-slogan">
+            Operation Empire State Rebellion          </div>
+        
+      </div> <!-- /#name-and-slogan -->
+    
+    
+          <div id="main-menu" class="navigation">
+        <h2 class="element-invisible">Main menu</h2><ul id="main-menu-links" class="links clearfix"><li class="menu-227 first active"><a href="/" class="active">Home</a></li>
+<li class="menu-434"><a href="/about" title="About OpESR">About</a></li>
+<li class="menu-656"><a href="/gallery-collections/galleries" title="">Galleries</a></li>
+<li class="menu-432 last"><a href="/location/map" title="Assembly Map">Map</a></li>
+</ul>      </div> <!-- /#main-menu -->
+    
+    
+  </div></div> <!-- /.section, /#header -->
+
+  
+      <div id="featured"><div class="section clearfix">
+        <div class="region region-featured">
+    <div id="block-views-map-block" class="block block-views">
+
+    
+  <div class="content">
+    <div class="view view-map view-id-map view-display-id-block view-dom-id-c62117c8ee035169305459209ff01ab8">
+        
+  
+  
+      <div class="view-content">
+      <div style="width: 100%; height: 300px;" id="gmap-auto1map-gmap0" class="gmap-control gmap-gmap gmap gmap-map gmap-auto1map-gmap"><noscript>Javascript is required to view this map.</noscript></div>    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+</div>
+  </div>
+    </div></div> <!-- /.section, /#featured -->
+  
+  <div id="main-wrapper" class="clearfix"><div id="main" class="clearfix">
+
+    
+    
+    <div id="content" class="column"><div class="section">
+            <a id="main-content"></a>
+                                <div class="tabs">
+                  </div>
+                          <div class="region region-content">
+    <div id="block-system-main" class="block block-system">
+
+    
+  <div class="content">
+    <div id="node-22" class="node node-article node-promoted node-teaser clearfix" about="/article/call-action-someanon" typeof="sioc:Item foaf:Document">
+
+        <h2>
+      <a href="/article/call-action-someanon">Call to Action: by SomeAnon</a>
+    </h2>
+    <span property="dc:title" content="Call to Action: by SomeAnon" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>
+      <div class="meta submitted">
+        <div class="user-picture">
+    <img typeof="foaf:Image" src="/sites/default/files/styles/thumbnail/public/pictures/picture-6-1359989277.jpg" alt="sysbreach&#039;s picture" title="sysbreach&#039;s picture" />  </div>
+      <span property="dc:date dc:created" content="2011-10-18T12:08:43-05:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" about="/users/sysbreach" typeof="sioc:UserAccount" property="foaf:name" datatype="">sysbreach</span> on Tue, 2011-10-18 12:08</span>    </div>
+  
+  <div class="content clearfix">
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Here we stand on the precipice of financial and spiritual collapse. A filthy scourge has been allowed to infiltrate the homes of decent and upstanding people which deters us from living the way we would like. There comes a time in all of our lives where we must stand up for ourselves and our livelihoods - not only because of the crisis we are currently facing and the oppression we have been dealt; but for the livelihoods of our children, and the betterment of humanity as a whole.</p></div></div></div><div class="field field-name-field-tags field-type-taxonomy-term-reference field-label-inline clearfix"><h3 class="field-label">Tags: </h3><ul class="links inline"><li class="taxonomy-term-reference-0" rel="dc:subject"><a href="/tags/opesr" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">OpESR</a></li><li class="taxonomy-term-reference-1" rel="dc:subject"><a href="/tags/giabo" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">GIABO</a></li><li class="taxonomy-term-reference-2" rel="dc:subject"><a href="/tags/occupy" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">Occupy</a></li><li class="taxonomy-term-reference-3" rel="dc:subject"><a href="/tags/a99shields" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">A99Shields</a></li></ul></div>  </div>
+
+      <div class="link-wrapper">
+      <ul class="links inline"><li class="node-readmore first"><a href="/article/call-action-someanon" rel="tag" title="Call to Action: by SomeAnon">Read more<span class="element-invisible"> about Call to Action: by SomeAnon</span></a></li>
+<li class="comment_forbidden"><span><a href="/user/login?destination=node/22%23comment-form">Log in</a> to post comments</span></li>
+<li class="tweet_Twitter last"><a href="http://twitter.com/?status=Call%20to%20Action%3A%20by%20SomeAnon%20%23GIABO%20%23Occupy%20%23A99Shields%20%23OpESR%20http%3A//live-opesr.pantheonsite.io/article/call-action-someanon%20via%20%40Op_ESR" class="tweet" rel="nofollow" target="_blank"><img typeof="foaf:Image" src="/sites/all/modules/tweet/twitter.png" alt="Post to Twitter" title="Post to Twitter" /> Post to Twitter</a></li>
+</ul>    </div>
+  
+  
+</div>
+<div id="node-21" class="node node-assembly node-promoted node-teaser clearfix" about="/assembly/occupy-columbia" typeof="sioc:Item foaf:Document">
+
+        <h2>
+      <a href="/assembly/occupy-columbia">Occupy Columbia </a>
+    </h2>
+    <span property="dc:title" content="Occupy Columbia " class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>
+      <div class="meta submitted">
+            <span property="dc:date dc:created" content="2011-10-14T20:38:42-05:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" typeof="sioc:UserAccount" property="foaf:name" datatype="">Anonymous</span> on Fri, 2011-10-14 20:38</span>    </div>
+  
+  <div class="content clearfix">
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Occupy Columbia 9AM State House. </p>
+<p>Some questions have been coming in about a march from Finlay to the State House; Occupy Columbia begins at 9am this Saturday at the State House but there is a march held by the Columbia chapter of MoveOn which will begin 2:15 at Finlay Park and end up at the State house.</p></div></div></div><div class="field field-name-field-date field-type-datetime field-label-inline clearfix"><div class="field-label">Date:&nbsp;</div><div class="field-items"><div class="field-item even"><span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2011-10-15T14:00:00-04:00">2011-10-15 14:00</span></div></div></div><div class="field field-name-field-tags field-type-taxonomy-term-reference field-label-inline clearfix"><h3 class="field-label">Tags: </h3><ul class="links inline"><li class="taxonomy-term-reference-0"><a href="/tags/opesr" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">OpESR</a></li><li class="taxonomy-term-reference-1"><a href="/tags/occupywallstreet" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">OccupyWallStreet</a></li><li class="taxonomy-term-reference-2"><a href="/tags/occupycolumbia" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">OccupyColumbia</a></li><li class="taxonomy-term-reference-3"><a href="/tags/sc" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">SC</a></li></ul></div>  </div>
+
+      <div class="link-wrapper">
+      <ul class="links inline"><li class="node-readmore first"><a href="/assembly/occupy-columbia" rel="tag" title="Occupy Columbia ">Read more<span class="element-invisible"> about Occupy Columbia </span></a></li>
+<li class="comment_forbidden"><span><a href="/user/login?destination=node/21%23comment-form">Log in</a> to post comments</span></li>
+<li class="tweet_Twitter last"><a href="http://twitter.com/?status=Occupy%20Columbia%20%23OccupyWallStreet%20%23OccupyColumbia%20%23SC%20%23OpESR%20http%3A//live-opesr.pantheonsite.io/assembly/occupy-columbia%20via%20%40Op_ESR" class="tweet" rel="nofollow" target="_blank"><img typeof="foaf:Image" src="/sites/all/modules/tweet/twitter.png" alt="Post to Twitter" title="Post to Twitter" /> Post to Twitter</a></li>
+</ul>    </div>
+  
+  
+</div>
+<div id="node-20" class="node node-assembly node-promoted node-teaser clearfix" about="/assembly/occupy-johnson-city-tn" typeof="sioc:Item foaf:Document">
+
+        <h2>
+      <a href="/assembly/occupy-johnson-city-tn">Occupy Johnson City, TN</a>
+    </h2>
+    <span property="dc:title" content="Occupy Johnson City, TN" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="4" datatype="xsd:integer" class="rdf-meta element-hidden"></span>
+      <div class="meta submitted">
+            <span property="dc:date dc:created" content="2011-10-14T18:38:00-05:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" typeof="sioc:UserAccount" property="foaf:name" datatype="">Anonymous</span> on Fri, 2011-10-14 18:38</span>    </div>
+  
+  <div class="content clearfix">
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Join us tomorrow as we join others like us across the couuntry and Occupy Johnson City.</p>
+</div></div></div><div class="field field-name-field-date field-type-datetime field-label-inline clearfix"><div class="field-label">Date:&nbsp;</div><div class="field-items"><div class="field-item even"><div class="date-display-range"><span class="date-display-start" property="dc:date" datatype="xsd:dateTime" content="2011-10-15T15:00:00-04:00">2011-10-15 15:00</span> to <span class="date-display-end" property="dc:date" datatype="xsd:dateTime" content="2012-01-16T04:30:00-05:00">2012-01-16 04:30</span></div></div></div></div><div class="field field-name-field-tags field-type-taxonomy-term-reference field-label-inline clearfix"><h3 class="field-label">Tags: </h3><ul class="links inline"><li class="taxonomy-term-reference-0"><a href="/tags/opesr" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">OpESR</a></li><li class="taxonomy-term-reference-1"><a href="/tags/ows" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">OWS</a></li><li class="taxonomy-term-reference-2"><a href="/tags/occupy" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">Occupy</a></li><li class="taxonomy-term-reference-3"><a href="/tags/tn" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">TN</a></li></ul></div>  </div>
+
+      <div class="link-wrapper">
+      <ul class="links inline"><li class="node-readmore first"><a href="/assembly/occupy-johnson-city-tn" rel="tag" title="Occupy Johnson City, TN">Read more<span class="element-invisible"> about Occupy Johnson City, TN</span></a></li>
+<li class="comment-comments"><a href="/assembly/occupy-johnson-city-tn#comments" title="Jump to the first comment of this posting.">4 comments</a></li>
+<li class="comment_forbidden"><span><a href="/user/login?destination=node/20%23comment-form">Log in</a> to post comments</span></li>
+<li class="tweet_Twitter last"><a href="http://twitter.com/?status=Occupy%20Johnson%20City%2C%20TN%20%23OWS%20%23Occupy%20%23TN%20%23OpESR%20http%3A//live-opesr.pantheonsite.io/assembly/occupy-johnson-city-tn%20via%20%40Op_ESR" class="tweet" rel="nofollow" target="_blank"><img typeof="foaf:Image" src="/sites/all/modules/tweet/twitter.png" alt="Post to Twitter" title="Post to Twitter" /> Post to Twitter</a></li>
+</ul>    </div>
+  
+  
+</div>
+<div id="node-10" class="node node-assembly node-promoted node-teaser clearfix" about="/assembly/occupy-orlando" typeof="sioc:Item foaf:Document">
+
+        <h2>
+      <a href="/assembly/occupy-orlando">Occupy Orlando</a>
+    </h2>
+    <span property="dc:title" content="Occupy Orlando" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>
+      <div class="meta submitted">
+            <span property="dc:date dc:created" content="2011-10-12T06:02:48-05:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" typeof="sioc:UserAccount" property="foaf:name" datatype="">Anonymous</span> on Wed, 2011-10-12 06:02</span>    </div>
+  
+  <div class="content clearfix">
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>We are a decentralized non-violent resistance movement, which seeks to restore the rule of law and fight back against the organized criminal class." </p>
+<p>ORLANDO --- The Occupy Orlando movement will hold one more General Assembly leading up to the October 15th occupation. The assembly will be held on Wednesday October 12th at the Orange County Regional History Center at 6:30pm. The group plans to organize efforts to ensure the safety and effectiveness of the occupation.</p></div></div></div><div class="field field-name-field-date field-type-datetime field-label-inline clearfix"><div class="field-label">Date:&nbsp;</div><div class="field-items"><div class="field-item even"><span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2011-10-15T05:00:00-04:00">2011-10-15 05:00</span></div></div></div><div class="field field-name-field-tags field-type-taxonomy-term-reference field-label-inline clearfix"><h3 class="field-label">Tags: </h3><ul class="links inline"><li class="taxonomy-term-reference-0"><a href="/tags/opesr" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">OpESR</a></li><li class="taxonomy-term-reference-1"><a href="/tags/occupyorlando" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">occupyorlando</a></li><li class="taxonomy-term-reference-2"><a href="/tags/ows" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">OWS</a></li><li class="taxonomy-term-reference-3"><a href="/tags/oporlando" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">oporlando</a></li></ul></div>  </div>
+
+      <div class="link-wrapper">
+      <ul class="links inline"><li class="node-readmore first"><a href="/assembly/occupy-orlando" rel="tag" title="Occupy Orlando">Read more<span class="element-invisible"> about Occupy Orlando</span></a></li>
+<li class="comment_forbidden"><span><a href="/user/login?destination=node/10%23comment-form">Log in</a> to post comments</span></li>
+<li class="tweet_Twitter last"><a href="http://twitter.com/?status=Occupy%20Orlando%20%23occupyorlando%20%23OWS%20%23oporlando%20%23OpESR%20http%3A//live-opesr.pantheonsite.io/assembly/occupy-orlando%20via%20%40Op_ESR" class="tweet" rel="nofollow" target="_blank"><img typeof="foaf:Image" src="/sites/all/modules/tweet/twitter.png" alt="Post to Twitter" title="Post to Twitter" /> Post to Twitter</a></li>
+</ul>    </div>
+  
+  
+</div>
+<div id="node-6" class="node node-article node-promoted node-teaser clearfix" about="/article/opesr-call-occupy-oppaperstorm" typeof="sioc:Item foaf:Document">
+
+        <h2>
+      <a href="/article/opesr-call-occupy-oppaperstorm">The #OpESR Call to Occupy ~ #OpPaperStorm this.</a>
+    </h2>
+    <span property="dc:title" content="The #OpESR Call to Occupy ~ #OpPaperStorm this." class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="1" datatype="xsd:integer" class="rdf-meta element-hidden"></span>
+      <div class="meta submitted">
+        <div class="user-picture">
+    <img typeof="foaf:Image" src="/sites/default/files/styles/thumbnail/public/pictures/picture-6-1359989277.jpg" alt="sysbreach&#039;s picture" title="sysbreach&#039;s picture" />  </div>
+      <span property="dc:date dc:created" content="2011-10-11T00:57:55-05:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" about="/users/sysbreach" typeof="sioc:UserAccount" property="foaf:name" datatype="">sysbreach</span> on Tue, 2011-10-11 00:57</span>    </div>
+  
+  <div class="content clearfix">
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"> <p><strong>Q:</strong> <em>What is </em><em>#A99?</em><em> and OpESR?</em></p>
+<p><strong>A: </strong>A<strong> non-violent</strong> social movement with this list of demands: <strong>End the campaign finance</strong> and <strong>lobbying racket</strong>, <strong>Break up the banks</strong>, <strong>Enforce RICO laws against the organized criminal class</strong>, and <strong>Order Ben Bernanke to step down</strong>. </p>
+<p></p></div></div></div><div class="field field-name-field-tags field-type-taxonomy-term-reference field-label-inline clearfix"><h3 class="field-label">Tags: </h3><ul class="links inline"><li class="taxonomy-term-reference-0" rel="dc:subject"><a href="/tags/opesr" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">OpESR</a></li></ul></div>  </div>
+
+      <div class="link-wrapper">
+      <ul class="links inline"><li class="node-readmore first"><a href="/article/opesr-call-occupy-oppaperstorm" rel="tag" title="The #OpESR Call to Occupy ~ #OpPaperStorm this.">Read more<span class="element-invisible"> about The #OpESR Call to Occupy ~ #OpPaperStorm this.</span></a></li>
+<li class="comment-comments"><a href="/article/opesr-call-occupy-oppaperstorm#comments" title="Jump to the first comment of this posting.">1 comment</a></li>
+<li class="comment_forbidden"><span><a href="/user/login?destination=node/6%23comment-form">Log in</a> to post comments</span></li>
+<li class="tweet_Twitter last"><a href="http://twitter.com/?status=The%20%23OpESR%20Call%20to%20Occupy%20~%20%23OpPaperStorm%20this.%20%23OpESR%20http%3A//live-opesr.pantheonsite.io/article/opesr-call-occupy-oppaperstorm%20via%20%40Op_ESR" class="tweet" rel="nofollow" target="_blank"><img typeof="foaf:Image" src="/sites/all/modules/tweet/twitter.png" alt="Post to Twitter" title="Post to Twitter" /> Post to Twitter</a></li>
+</ul>    </div>
+  
+  
+</div>
+<div id="node-3" class="node node-article node-promoted node-teaser clearfix" about="/article/us-protesters-against-rich-one-percent" typeof="sioc:Item foaf:Document">
+
+        <h2>
+      <a href="/article/us-protesters-against-rich-one-percent">&#039;US protesters against rich one percent&#039;</a>
+    </h2>
+    <span property="dc:title" content="&#039;US protesters against rich one percent&#039;" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>
+      <div class="meta submitted">
+        <div class="user-picture">
+    <img typeof="foaf:Image" src="/sites/default/files/styles/thumbnail/public/pictures/picture-5-1317354949.jpg" alt="m420c&#039;s picture" title="m420c&#039;s picture" />  </div>
+      <span property="dc:date dc:created" content="2011-10-08T22:20:47-05:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" about="/users/m420c" typeof="sioc:UserAccount" property="foaf:name" datatype="">m420c</span> on Sat, 2011-10-08 22:20</span>    </div>
+  
+  <div class="content clearfix">
+    <div class="field field-name-field-image field-type-image field-label-hidden"><div class="field-items"><div class="field-item even" rel="og:image rdfs:seeAlso" resource="/sites/default/files/styles/thumbnail/public/article/image/gholami20111008191338187.jpg"><a href="/article/us-protesters-against-rich-one-percent"><img typeof="foaf:Image" src="/sites/default/files/styles/thumbnail/public/article/image/gholami20111008191338187.jpg" width="100" height="67" /></a></div></div></div><div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"> <p><strong>US protesters are totally against the distribution of wealth and power among the minority in the country, the Occupied Wall Street Journal editor Arun Gupta tells Press TV.</strong></p></div></div></div><div class="field field-name-field-tags field-type-taxonomy-term-reference field-label-inline clearfix"><h3 class="field-label">Tags: </h3><ul class="links inline"><li class="taxonomy-term-reference-0" rel="dc:subject"><a href="/tags/opesr" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">OpESR</a></li><li class="taxonomy-term-reference-1" rel="dc:subject"><a href="/tags/a99" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">A99</a></li><li class="taxonomy-term-reference-2" rel="dc:subject"><a href="/tags/99-percent" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">99 percent</a></li><li class="taxonomy-term-reference-3" rel="dc:subject"><a href="/tags/occupy" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">Occupy</a></li></ul></div>  </div>
+
+      <div class="link-wrapper">
+      <ul class="links inline"><li class="node-readmore first"><a href="/article/us-protesters-against-rich-one-percent" rel="tag" title="&#039;US protesters against rich one percent&#039;">Read more<span class="element-invisible"> about &#039;US protesters against rich one percent&#039;</span></a></li>
+<li class="comment_forbidden"><span><a href="/user/login?destination=node/3%23comment-form">Log in</a> to post comments</span></li>
+<li class="tweet_Twitter last"><a href="http://twitter.com/?status=%27US%20protesters%20against%20rich%20one%20percent%27%20%23A99%20%E2%80%A6%20http%3A//live-opesr.pantheonsite.io/article/us-protesters-against-rich-one-percent%20via%20%40Op_ESR" class="tweet" rel="nofollow" target="_blank"><img typeof="foaf:Image" src="/sites/all/modules/tweet/twitter.png" alt="Post to Twitter" title="Post to Twitter" /> Post to Twitter</a></li>
+</ul>    </div>
+  
+  
+</div>
+<div id="node-19" class="node node-assembly node-promoted node-teaser clearfix" about="/assembly/going-seattle-bofa-rally-point" typeof="sioc:Item foaf:Document">
+
+        <h2>
+      <a href="/assembly/going-seattle-bofa-rally-point">Going to #Seattle #BofA Rally Point </a>
+    </h2>
+    <span property="dc:title" content="Going to #Seattle #BofA Rally Point " class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>
+      <div class="meta submitted">
+        <div class="user-picture">
+    <img typeof="foaf:Image" src="/sites/default/files/styles/thumbnail/public/pictures/picture-1-1318234380.jpg" alt="OpESR&#039;s picture" title="OpESR&#039;s picture" />  </div>
+      <span property="dc:date dc:created" content="2011-06-14T14:00:00-05:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" about="/users/opesr" typeof="sioc:UserAccount" property="foaf:name" datatype="">OpESR</span> on Tue, 2011-06-14 14:00</span>    </div>
+  
+  <div class="content clearfix">
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Remain on Sidewalk near bank (Not a Street Protest); Gather before 11 near bank; Option: continue up to bank close at your discretion</p>
+</div></div></div><div class="field field-name-field-date field-type-datetime field-label-inline clearfix"><div class="field-label">Date:&nbsp;</div><div class="field-items"><div class="field-item even"><span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2011-06-14T16:00:00-07:00">2011-06-14 16:00</span></div></div></div><div class="field field-name-field-tags field-type-taxonomy-term-reference field-label-inline clearfix"><h3 class="field-label">Tags: </h3><ul class="links inline"><li class="taxonomy-term-reference-0"><a href="/tags/opesr" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">OpESR</a></li><li class="taxonomy-term-reference-1"><a href="/tags/flagday" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">FlagDay</a></li><li class="taxonomy-term-reference-2"><a href="/tags/seattle" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">Seattle</a></li><li class="taxonomy-term-reference-3"><a href="/tags/bofa" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">BofA</a></li></ul></div>  </div>
+
+      <div class="link-wrapper">
+      <ul class="links inline"><li class="node-readmore first"><a href="/assembly/going-seattle-bofa-rally-point" rel="tag" title="Going to #Seattle #BofA Rally Point ">Read more<span class="element-invisible"> about Going to #Seattle #BofA Rally Point </span></a></li>
+<li class="comment_forbidden"><span><a href="/user/login?destination=node/19%23comment-form">Log in</a> to post comments</span></li>
+<li class="tweet_Twitter last"><a href="http://twitter.com/?status=Going%20to%20%23Seattle%20%23BofA%20Rally%20Point%20%23Seattle%20%23BofA%20%23%E2%80%A6%20http%3A//live-opesr.pantheonsite.io/assembly/going-seattle-bofa-rally-point%20via%20%40Op_ESR" class="tweet" rel="nofollow" target="_blank"><img typeof="foaf:Image" src="/sites/all/modules/tweet/twitter.png" alt="Post to Twitter" title="Post to Twitter" /> Post to Twitter</a></li>
+</ul>    </div>
+  
+  
+</div>
+<div id="node-18" class="node node-assembly node-promoted node-teaser clearfix" about="/assembly/going-sf-wf-rally-point" typeof="sioc:Item foaf:Document">
+
+        <h2>
+      <a href="/assembly/going-sf-wf-rally-point">Going to #SF #WF Rally Point</a>
+    </h2>
+    <span property="dc:title" content="Going to #SF #WF Rally Point" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>
+      <div class="meta submitted">
+        <div class="user-picture">
+    <img typeof="foaf:Image" src="/sites/default/files/styles/thumbnail/public/pictures/picture-1-1318234380.jpg" alt="OpESR&#039;s picture" title="OpESR&#039;s picture" />  </div>
+      <span property="dc:date dc:created" content="2011-06-14T14:00:00-05:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" about="/users/opesr" typeof="sioc:UserAccount" property="foaf:name" datatype="">OpESR</span> on Tue, 2011-06-14 14:00</span>    </div>
+  
+  <div class="content clearfix">
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Remain on Sidewalk near bank (Not a Street Protest); Gather before 11 near bank; Option: continue up to bank close at your discretion.</p>
+</div></div></div><div class="field field-name-field-date field-type-datetime field-label-inline clearfix"><div class="field-label">Date:&nbsp;</div><div class="field-items"><div class="field-item even"><span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2011-06-14T16:00:00-07:00">2011-06-14 16:00</span></div></div></div><div class="field field-name-field-tags field-type-taxonomy-term-reference field-label-inline clearfix"><h3 class="field-label">Tags: </h3><ul class="links inline"><li class="taxonomy-term-reference-0"><a href="/tags/opesr" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">OpESR</a></li><li class="taxonomy-term-reference-1"><a href="/tags/flagday" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">FlagDay</a></li><li class="taxonomy-term-reference-2"><a href="/tags/sf" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">SF</a></li><li class="taxonomy-term-reference-3"><a href="/tags/wf" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">WF</a></li></ul></div>  </div>
+
+      <div class="link-wrapper">
+      <ul class="links inline"><li class="node-readmore first"><a href="/assembly/going-sf-wf-rally-point" rel="tag" title="Going to #SF #WF Rally Point">Read more<span class="element-invisible"> about Going to #SF #WF Rally Point</span></a></li>
+<li class="comment_forbidden"><span><a href="/user/login?destination=node/18%23comment-form">Log in</a> to post comments</span></li>
+<li class="tweet_Twitter last"><a href="http://twitter.com/?status=Going%20to%20%23SF%20%23WF%20Rally%20Point%20%23SF%20%23WF%20%23OpESR%20%23FlagDay%20http%3A//live-opesr.pantheonsite.io/assembly/going-sf-wf-rally-point%20via%20%40Op_ESR" class="tweet" rel="nofollow" target="_blank"><img typeof="foaf:Image" src="/sites/all/modules/tweet/twitter.png" alt="Post to Twitter" title="Post to Twitter" /> Post to Twitter</a></li>
+</ul>    </div>
+  
+  
+</div>
+<div id="node-17" class="node node-assembly node-promoted node-teaser clearfix" about="/assembly/going-okc-bofa-rally-point" typeof="sioc:Item foaf:Document">
+
+        <h2>
+      <a href="/assembly/going-okc-bofa-rally-point">Going to #OKC #BofA Rally Point</a>
+    </h2>
+    <span property="dc:title" content="Going to #OKC #BofA Rally Point" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>
+      <div class="meta submitted">
+        <div class="user-picture">
+    <img typeof="foaf:Image" src="/sites/default/files/styles/thumbnail/public/pictures/picture-1-1318234380.jpg" alt="OpESR&#039;s picture" title="OpESR&#039;s picture" />  </div>
+      <span property="dc:date dc:created" content="2011-06-14T14:00:00-05:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" about="/users/opesr" typeof="sioc:UserAccount" property="foaf:name" datatype="">OpESR</span> on Tue, 2011-06-14 14:00</span>    </div>
+  
+  <div class="content clearfix">
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>UPDATE: DONATE TO HURRICANE VICTIMS in OKLAHOMA CITY #OKC - Red Cross ($3 gets comfort kit for storm victims) You can do this at any time via <a href="http://www.okc.redcross.org/">http://www.okc.redcross.org/</a> - from there, just click on the 'Make a Donation' tab, then click on 'American Red Cross of Central Oklahoma,' then scroll down and click on 'Donate Now' and select 'Local Disaster Relief Fund' in the Donation Category.</p>
+<p>Gather before 11 near bank at location described below; Option: go up to 5pm at your discretion</p></div></div></div><div class="field field-name-field-date field-type-datetime field-label-inline clearfix"><div class="field-label">Date:&nbsp;</div><div class="field-items"><div class="field-item even"><span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2011-06-14T16:00:00-05:00">2011-06-14 16:00</span></div></div></div><div class="field field-name-field-tags field-type-taxonomy-term-reference field-label-inline clearfix"><h3 class="field-label">Tags: </h3><ul class="links inline"><li class="taxonomy-term-reference-0"><a href="/tags/opesr" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">OpESR</a></li><li class="taxonomy-term-reference-1"><a href="/tags/flagday" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">FlagDay</a></li><li class="taxonomy-term-reference-2"><a href="/tags/okc" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">OKC</a></li><li class="taxonomy-term-reference-3"><a href="/tags/bofa" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">BofA</a></li></ul></div>  </div>
+
+      <div class="link-wrapper">
+      <ul class="links inline"><li class="node-readmore first"><a href="/assembly/going-okc-bofa-rally-point" rel="tag" title="Going to #OKC #BofA Rally Point">Read more<span class="element-invisible"> about Going to #OKC #BofA Rally Point</span></a></li>
+<li class="comment_forbidden"><span><a href="/user/login?destination=node/17%23comment-form">Log in</a> to post comments</span></li>
+<li class="tweet_Twitter last"><a href="http://twitter.com/?status=Going%20to%20%23OKC%20%23BofA%20Rally%20Point%20%23OKC%20%23BofA%20%23OpESR%20%23FlagDay%20http%3A//live-opesr.pantheonsite.io/assembly/going-okc-bofa-rally-point%20via%20%40Op_ESR" class="tweet" rel="nofollow" target="_blank"><img typeof="foaf:Image" src="/sites/all/modules/tweet/twitter.png" alt="Post to Twitter" title="Post to Twitter" /> Post to Twitter</a></li>
+</ul>    </div>
+  
+  
+</div>
+<div id="node-16" class="node node-assembly node-promoted node-teaser clearfix" about="/assembly/going-flint-chase-rally-point" typeof="sioc:Item foaf:Document">
+
+        <h2>
+      <a href="/assembly/going-flint-chase-rally-point">Going to #Flint #Chase Rally Point</a>
+    </h2>
+    <span property="dc:title" content="Going to #Flint #Chase Rally Point" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>
+      <div class="meta submitted">
+        <div class="user-picture">
+    <img typeof="foaf:Image" src="/sites/default/files/styles/thumbnail/public/pictures/picture-1-1318234380.jpg" alt="OpESR&#039;s picture" title="OpESR&#039;s picture" />  </div>
+      <span property="dc:date dc:created" content="2011-06-14T14:00:00-05:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" about="/users/opesr" typeof="sioc:UserAccount" property="foaf:name" datatype="">OpESR</span> on Tue, 2011-06-14 14:00</span>    </div>
+  
+  <div class="content clearfix">
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Remain on Sidewalk near bank (Not a Street Protest); Gather before 11 near bank; Option: continue up to bank close at your discretion.</p>
+</div></div></div><div class="field field-name-field-date field-type-datetime field-label-inline clearfix"><div class="field-label">Date:&nbsp;</div><div class="field-items"><div class="field-item even"><span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2011-06-14T16:00:00-04:00">2011-06-14 16:00</span></div></div></div><div class="field field-name-field-tags field-type-taxonomy-term-reference field-label-inline clearfix"><h3 class="field-label">Tags: </h3><ul class="links inline"><li class="taxonomy-term-reference-0"><a href="/tags/opesr" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">OpESR</a></li><li class="taxonomy-term-reference-1"><a href="/tags/flagday" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">FlagDay</a></li><li class="taxonomy-term-reference-2"><a href="/tags/flint" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">Flint</a></li><li class="taxonomy-term-reference-3"><a href="/tags/chase" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">Chase</a></li></ul></div>  </div>
+
+      <div class="link-wrapper">
+      <ul class="links inline"><li class="node-readmore first"><a href="/assembly/going-flint-chase-rally-point" rel="tag" title="Going to #Flint #Chase Rally Point">Read more<span class="element-invisible"> about Going to #Flint #Chase Rally Point</span></a></li>
+<li class="comment_forbidden"><span><a href="/user/login?destination=node/16%23comment-form">Log in</a> to post comments</span></li>
+<li class="tweet_Twitter last"><a href="http://twitter.com/?status=Going%20to%20%23Flint%20%23Chase%20Rally%20Point%20%23Flint%20%23Chase%20%23OpES%E2%80%A6%20http%3A//live-opesr.pantheonsite.io/assembly/going-flint-chase-rally-point%20via%20%40Op_ESR" class="tweet" rel="nofollow" target="_blank"><img typeof="foaf:Image" src="/sites/all/modules/tweet/twitter.png" alt="Post to Twitter" title="Post to Twitter" /> Post to Twitter</a></li>
+</ul>    </div>
+  
+  
+</div>
+<h2 class="element-invisible">Pages</h2><div class="item-list"><ul class="pager"><li class="pager-first first"><a title="Go to first page" href="/node">« first</a></li>
+<li class="pager-previous"><a title="Go to previous page" href="/node?page=3">‹ previous</a></li>
+<li class="pager-item"><a title="Go to page 1" href="/node">1</a></li>
+<li class="pager-item"><a title="Go to page 2" href="/node?page=1">2</a></li>
+<li class="pager-item"><a title="Go to page 3" href="/node?page=2">3</a></li>
+<li class="pager-item"><a title="Go to page 4" href="/node?page=3">4</a></li>
+<li class="pager-current">5</li>
+<li class="pager-item"><a title="Go to page 6" href="/node?page=5">6</a></li>
+<li class="pager-next"><a title="Go to next page" href="/node?page=5">next ›</a></li>
+<li class="pager-last last"><a title="Go to last page" href="/node?page=5">last »</a></li>
+</ul></div>  </div>
+</div>
+  </div>
+      <a href="/rss.xml" class="feed-icon" title="Subscribe to OpESR RSS"><img typeof="foaf:Image" src="/misc/feed.png" width="16" height="16" alt="Subscribe to OpESR RSS" /></a>
+    </div></div> <!-- /.section, /#content -->
+
+    
+  </div></div> <!-- /#main, /#main-wrapper -->
+
+      <div id="triptych-wrapper"><div id="triptych" class="clearfix">
+        <div class="region region-triptych-first">
+    <div id="block-media-gallery-7" class="block block-media-gallery">
+
+    <h2>OpESR</h2>
+  
+  <div class="content">
+    <div id="node-7" class="node node-media-gallery clearfix" about="/gallery/opesr" typeof="sioc:Item foaf:Document">
+
+        <h2>
+      <a href="/gallery/opesr"></a>
+    </h2>
+    <span property="dc:title" content="OpESR" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>
+  
+  <div class="content clearfix">
+    <div class="field field-name-media-gallery-media field-type-media field-label-hidden clearfix media-gallery-media mg-col mg-col-2"><div class="field-items"><div class="field-item even" id="media-gallery-media-0"><div class="media-gallery-item-wrapper"><div class="media-gallery-item"><div class="top"><div class="top-inset-1"><div class="top-inset-2"></div></div></div><div class="gallery-thumb-outer"><div class="gallery-thumb-inner"><a href="/media-gallery/detail/7/80" class="media-gallery-thumb cbEnabled"><img typeof="foaf:Image" src="/sites/default/files/styles/media_gallery_thumbnail/public/media-youtube/RCX8RBGZSTg.jpg" width="450" height="450" alt="Anonymous - The Bankers Are The Problem" /></a></div></div><div class="bottom"><div class="bottom-inset-1"><div class="bottom-inset-2"></div></div></div></div></div></div><div class="field-item odd" id="media-gallery-media-1"><div class="media-gallery-item-wrapper"><div class="media-gallery-item"><div class="top"><div class="top-inset-1"><div class="top-inset-2"></div></div></div><div class="gallery-thumb-outer"><div class="gallery-thumb-inner"><a href="/media-gallery/detail/7/24" class="media-gallery-thumb cbEnabled"><img typeof="foaf:Image" src="/sites/default/files/styles/media_gallery_thumbnail/public/media-youtube/sO3lnIC4bCE.jpg" width="450" height="450" alt="sO3lnIC4bCE" /></a></div></div><div class="bottom"><div class="bottom-inset-1"><div class="bottom-inset-2"></div></div></div></div></div></div><div class="field-item even" id="media-gallery-media-2"><div class="media-gallery-item-wrapper"><div class="media-gallery-item"><div class="top"><div class="top-inset-1"><div class="top-inset-2"></div></div></div><div class="gallery-thumb-outer"><div class="gallery-thumb-inner"><a href="/media-gallery/detail/7/23" class="media-gallery-thumb cbEnabled"><img typeof="foaf:Image" src="/sites/default/files/styles/media_gallery_thumbnail/public/media-youtube/CLzI3Qysa50.jpg" width="450" height="450" alt="CLzI3Qysa50" /></a></div></div><div class="bottom"><div class="bottom-inset-1"><div class="bottom-inset-2"></div></div></div></div></div></div><div class="field-item odd" id="media-gallery-media-3"><div class="media-gallery-item-wrapper"><div class="media-gallery-item"><div class="top"><div class="top-inset-1"><div class="top-inset-2"></div></div></div><div class="gallery-thumb-outer"><div class="gallery-thumb-inner"><a href="/media-gallery/detail/7/21" class="media-gallery-thumb cbEnabled"><img typeof="foaf:Image" src="/sites/default/files/styles/media_gallery_thumbnail/public/media-youtube/B7YnRzzGUpk.jpg" width="450" height="450" alt="B7YnRzzGUpk" /></a></div></div><div class="bottom"><div class="bottom-inset-1"><div class="bottom-inset-2"></div></div></div></div></div></div></div></div>  </div>
+
+  
+  
+</div>
+<div class="more-link"><a href="/gallery/opesr" title="Show the complete gallery">More</a></div>  </div>
+</div>
+  </div>
+        <div class="region region-triptych-middle">
+    <div id="block-media-gallery-9" class="block block-media-gallery">
+
+    <h2>Occupy</h2>
+  
+  <div class="content">
+    <div id="node-9" class="node node-media-gallery clearfix" about="/gallery/occupy" typeof="sioc:Item foaf:Document">
+
+        <h2>
+      <a href="/gallery/occupy"></a>
+    </h2>
+    <span property="dc:title" content="Occupy" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>
+  
+  <div class="content clearfix">
+    <div class="field field-name-media-gallery-media field-type-media field-label-hidden clearfix media-gallery-media mg-col mg-col-2"><div class="field-items"><div class="field-item even" id="media-gallery-media-0"><div class="media-gallery-item-wrapper"><div class="media-gallery-item"><div class="top"><div class="top-inset-1"><div class="top-inset-2"></div></div></div><div class="gallery-thumb-outer"><div class="gallery-thumb-inner"><a href="/media-gallery/detail/9/54" class="media-gallery-thumb cbEnabled"><img typeof="foaf:Image" src="/sites/default/files/styles/media_gallery_thumbnail/public/media-youtube/u49U_jzn6GQ.jpg" width="450" height="450" alt="u49U_jzn6GQ" /></a></div></div><div class="bottom"><div class="bottom-inset-1"><div class="bottom-inset-2"></div></div></div></div></div></div><div class="field-item odd" id="media-gallery-media-1"><div class="media-gallery-item-wrapper"><div class="media-gallery-item"><div class="top"><div class="top-inset-1"><div class="top-inset-2"></div></div></div><div class="gallery-thumb-outer"><div class="gallery-thumb-inner"><a href="/media-gallery/detail/9/34" class="media-gallery-thumb cbEnabled"><img typeof="foaf:Image" src="/sites/default/files/styles/media_gallery_thumbnail/public/media-youtube/Xb9mJsiDJ7k.jpg" width="450" height="450" alt="Xb9mJsiDJ7k" /></a></div></div><div class="bottom"><div class="bottom-inset-1"><div class="bottom-inset-2"></div></div></div></div></div></div><div class="field-item even" id="media-gallery-media-2"><div class="media-gallery-item-wrapper"><div class="media-gallery-item"><div class="top"><div class="top-inset-1"><div class="top-inset-2"></div></div></div><div class="gallery-thumb-outer"><div class="gallery-thumb-inner"><a href="/media-gallery/detail/9/35" class="media-gallery-thumb cbEnabled"><img typeof="foaf:Image" src="/sites/default/files/styles/media_gallery_thumbnail/public/media-youtube/mW_nDBKybVg.jpg" width="450" height="450" alt="mW_nDBKybVg" /></a></div></div><div class="bottom"><div class="bottom-inset-1"><div class="bottom-inset-2"></div></div></div></div></div></div><div class="field-item odd" id="media-gallery-media-3"><div class="media-gallery-item-wrapper"><div class="media-gallery-item"><div class="top"><div class="top-inset-1"><div class="top-inset-2"></div></div></div><div class="gallery-thumb-outer"><div class="gallery-thumb-inner"><a href="/media-gallery/detail/9/37" class="media-gallery-thumb cbEnabled"><img typeof="foaf:Image" src="/sites/default/files/styles/media_gallery_thumbnail/public/media-youtube/LhhTvK2etNs.jpg" width="450" height="450" alt="LhhTvK2etNs" /></a></div></div><div class="bottom"><div class="bottom-inset-1"><div class="bottom-inset-2"></div></div></div></div></div></div></div></div>  </div>
+
+  
+  
+</div>
+<div class="more-link"><a href="/gallery/occupy" title="Show the complete gallery">More</a></div>  </div>
+</div>
+  </div>
+        <div class="region region-triptych-last">
+    <div id="block-media-gallery-53" class="block block-media-gallery">
+
+    <h2>FTP</h2>
+  
+  <div class="content">
+    <div id="node-53" class="node node-media-gallery node-promoted clearfix" about="/gallery/ftp" typeof="sioc:Item foaf:Document">
+
+        <h2>
+      <a href="/gallery/ftp"></a>
+    </h2>
+    <span property="dc:title" content="FTP" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>
+  
+  <div class="content clearfix">
+    <div class="field field-name-media-gallery-media field-type-media field-label-hidden clearfix media-gallery-media mg-col mg-col-2"><div class="field-items"><div class="field-item even" id="media-gallery-media-0"><div class="media-gallery-item-wrapper"><div class="media-gallery-item"><div class="top"><div class="top-inset-1"><div class="top-inset-2"></div></div></div><div class="gallery-thumb-outer"><div class="gallery-thumb-inner"><a href="/media-gallery/detail/53/76" class="media-gallery-thumb cbEnabled"><img typeof="foaf:Image" src="/sites/default/files/styles/media_gallery_thumbnail/public/media-youtube/GksTJeB5J3E.jpg" width="450" height="450" alt="Folder 01, Det. Pierre (Broadway &amp; Cortland) VIDEO: M2U00011" /></a></div></div><div class="bottom"><div class="bottom-inset-1"><div class="bottom-inset-2"></div></div></div></div></div></div><div class="field-item odd" id="media-gallery-media-1"><div class="media-gallery-item-wrapper"><div class="media-gallery-item"><div class="top"><div class="top-inset-1"><div class="top-inset-2"></div></div></div><div class="gallery-thumb-outer"><div class="gallery-thumb-inner"><a href="/media-gallery/detail/53/75" class="media-gallery-thumb cbEnabled"><img typeof="foaf:Image" src="/sites/default/files/styles/media_gallery_thumbnail/public/media-youtube/Y3OCtfanNx4.jpg" width="450" height="450" alt="Folder 01, Det. Pierre (Broadway &amp; Cortland) VIDEO: M2U00012" /></a></div></div><div class="bottom"><div class="bottom-inset-1"><div class="bottom-inset-2"></div></div></div></div></div></div><div class="field-item even" id="media-gallery-media-2"><div class="media-gallery-item-wrapper"><div class="media-gallery-item"><div class="top"><div class="top-inset-1"><div class="top-inset-2"></div></div></div><div class="gallery-thumb-outer"><div class="gallery-thumb-inner"><a href="/media-gallery/detail/53/74" class="media-gallery-thumb cbEnabled"><img typeof="foaf:Image" src="/sites/default/files/styles/media_gallery_thumbnail/public/media-youtube/i2lUKOV-qA0.jpg" width="450" height="450" alt="Folder 09, P.O. Telese 1 of 2 (Park Eviction): VIDEO: M2U00010" /></a></div></div><div class="bottom"><div class="bottom-inset-1"><div class="bottom-inset-2"></div></div></div></div></div></div><div class="field-item odd" id="media-gallery-media-3"><div class="media-gallery-item-wrapper"><div class="media-gallery-item"><div class="top"><div class="top-inset-1"><div class="top-inset-2"></div></div></div><div class="gallery-thumb-outer"><div class="gallery-thumb-inner"><a href="/media-gallery/detail/53/73" class="media-gallery-thumb cbEnabled"><img typeof="foaf:Image" src="/sites/default/files/styles/media_gallery_thumbnail/public/media-youtube/fTRKS_cQ_gk.jpg" width="450" height="450" alt="Folder 09, P.O. Telese 1 of 2 (Park Eviction): VIDEO: 20111115010652" /></a></div></div><div class="bottom"><div class="bottom-inset-1"><div class="bottom-inset-2"></div></div></div></div></div></div></div></div>  </div>
+
+  
+  
+</div>
+<div class="more-link"><a href="/gallery/ftp" title="Show the complete gallery">More</a></div>  </div>
+</div>
+  </div>
+    </div></div> <!-- /#triptych, /#triptych-wrapper -->
+  
+  <div id="footer-wrapper"><div class="section">
+
+    
+    
+  </div></div> <!-- /.section, /#footer-wrapper -->
+
+</div></div> <!-- /#page, /#page-wrapper -->
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"aa6c0166f7","applicationID":"3569351","transactionName":"MlIAbUNYDxVUVRBeWQsYI1pFUA4IGlgLU1M6RwNeVGYFA1NXEVtC","queueTime":0,"applicationTime":207,"atts":"HhUDGwtCHBs=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

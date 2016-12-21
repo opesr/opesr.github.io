@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-998.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+<link rel="shortlink" href="/node/49" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="/article/finally-ows-gets-police-arrest-people-suits" />
+  <title>Finally, #OWS gets Police to Arrest the People in Suits | OpESR</title>
+  <link type="text/css" rel="stylesheet" href="/sites/default/files/css/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/sites/default/files/css/css_xi_BRWGJrI1YNPkmKHvIQffmbwzxHXwWoqWT2ZHqPo4.css" media="screen" />
+<link type="text/css" rel="stylesheet" href="/sites/default/files/css/css_0_KYL24ZFbw2f7LbtKfXhnOyQoZOKYWHiXsWj2DCPK8.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/sites/default/files/css/css_7_nIe9s9x7xDr3xevw0X_MvPGE877wzuC0A8oz6u2aQ.css" media="all" />
+
+<!--[if lt IE 8]>
+<link type="text/css" rel="stylesheet" href="/sites/default/files/css/css_VyKHcoC2vkE6vSZy1096yGnGRXchk2qXI7pn80r5cvw.css" media="all" />
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="/sites/default/files/css/css_24VwYIeQPnPJg9p4mvTlo-SPhof77pbbsMlbHgUmW90.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/sites/default/files/css/css_2THG1eGiBIizsWFeexsNe1iDifJ00QRS9uSd03rY9co.css" media="print" />
+
+<!--[if lte IE 7]>
+<link type="text/css" rel="stylesheet" href="/themes/bartik/css/ie.css?" media="all" />
+<![endif]-->
+
+<!--[if IE 6]>
+<link type="text/css" rel="stylesheet" href="/themes/bartik/css/ie6.css?" media="all" />
+<![endif]-->
+  <script type="text/javascript" src="/sites/default/files/js/js_Xjzh1hVfcgVAixhmmB6Go8TUMPOiprA-2vkC-oWXARQ.js"></script>
+<script type="text/javascript" src="/sites/default/files/js/js_CnVjeK75WybhZPt5LIjxPFFChsSvirFJZ4QJHLcK6Rw.js"></script>
+<script type="text/javascript" src="/sites/default/files/js/js_X0oRoJDG3zwPG_dGqqLX5v1FaNVaVAMoFcdJGSRFRVM.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"bartik","theme_token":"2GdwvTuA5iro0xdj0X9ovc79egAH3Tq6yoeaDPVMD6M","js":{"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/libraries\/colorbox\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/modules\/media_gallery\/colorbox-display.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/libraries\/colorbox\/example1\/colorbox.css":1,"sites\/all\/modules\/calendar\/css\/calendar_multiday.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/media_gallery\/media_gallery.css":1,"sites\/all\/modules\/media_gallery\/media_gallery.ie7.css":1,"themes\/bartik\/css\/layout.css":1,"themes\/bartik\/css\/style.css":1,"themes\/bartik\/css\/colors.css":1,"themes\/bartik\/css\/print.css":1,"themes\/bartik\/css\/ie.css":1,"themes\/bartik\/css\/ie6.css":1}}});
+//--><!]]>
+</script>
+</head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-49 node-type-article triptych" >
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+    <div id="page-wrapper"><div id="page">
+
+  <div id="header" class="without-secondary-menu"><div class="section clearfix">
+
+    
+          <div id="name-and-slogan">
+
+                              <div id="site-name">
+              <strong>
+                <a href="/" title="Home" rel="home"><span>OpESR</span></a>
+              </strong>
+            </div>
+                  
+                  <div id="site-slogan">
+            Operation Empire State Rebellion          </div>
+        
+      </div> <!-- /#name-and-slogan -->
+    
+    
+          <div id="main-menu" class="navigation">
+        <h2 class="element-invisible">Main menu</h2><ul id="main-menu-links" class="links clearfix"><li class="menu-227 first"><a href="/">Home</a></li>
+<li class="menu-434"><a href="/about" title="About OpESR">About</a></li>
+<li class="menu-656"><a href="/gallery-collections/galleries" title="">Galleries</a></li>
+<li class="menu-432 last"><a href="/location/map" title="Assembly Map">Map</a></li>
+</ul>      </div> <!-- /#main-menu -->
+    
+    
+  </div></div> <!-- /.section, /#header -->
+
+  
+  
+  <div id="main-wrapper" class="clearfix"><div id="main" class="clearfix">
+
+          <div id="breadcrumb"><h2 class="element-invisible">You are here</h2><div class="breadcrumb"><a href="/">Home</a></div></div>
+    
+    
+    <div id="content" class="column"><div class="section">
+            <a id="main-content"></a>
+                    <h1 class="title" id="page-title">
+          Finally, #OWS gets Police to Arrest the People in Suits        </h1>
+                          <div class="tabs">
+                  </div>
+                          <div class="region region-content">
+    <div id="block-system-main" class="block block-system">
+
+    
+  <div class="content">
+    <div id="node-49" class="node node-article node-promoted node-full clearfix" about="/article/finally-ows-gets-police-arrest-people-suits" typeof="sioc:Item foaf:Document">
+
+      <span property="dc:title" content="Finally, #OWS gets Police to Arrest the People in Suits" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>
+      <div class="meta submitted">
+        <div class="user-picture">
+    <img typeof="foaf:Image" src="/sites/default/files/styles/thumbnail/public/pictures/picture-6-1359989277.jpg" alt="sysbreach&#039;s picture" title="sysbreach&#039;s picture" />  </div>
+      <span property="dc:date dc:created" content="2012-04-02T14:17:53-05:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" about="/users/sysbreach" typeof="sioc:UserAccount" property="foaf:name" datatype="">sysbreach</span> on Mon, 2012-04-02 14:17</span>    </div>
+  
+  <div class="content clearfix">
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>by Bryan Farrell | March 26, 2012</p>
+<p><a href="http://wagingnonviolence.org/2012/03/finally-ows-gets-police-to-arrest-the-people-in-suits/">http://wagingnonviolence.org/2012/03/finally-ows-gets-police-to-arrest-t...</a></p>
+<p>Sometimes justice requires a little imagination. On Saturday, when much of the Occupy Wall Street movement in New York was loudly denouncing police violence against minorities and protesters, a small group of environmentalists dreamed up a way to get the police to focus on the crimes of the 1 percent, to the point of arresting five corporate suits on United Nations property.</p>
+<p>Granted, those five were actually members of the OWS affinity group Disrupt Dirty Power, which used Saturday’s action (billed as a “mock’upation”) to launch a month of actions targeting the “corrupt partnership between Wall Street, politicians and the business of pollution.” Police officers seemed thrown for a loop as they tore down tents bearing corporate logos and cuffed people who claimed to be from Bank of America and ExxonMobil. Compared to the rowdy anti-NYPD march earlier that afternoon, this time, the cops had more of a chance to think about what side they’re really on.</p>
+<p>As the action began around 5 p.m., the police presence was focused on the small group of OWS protesters gathered in Dag Hammarskjold Plaza, a few blocks away from U.N. headquarters. The officers must have noticed the signs and banners, heard the people’s mic, observed the silly improv performance skewering corporate polluters and thought they were in the right place. But if they had paid closer attention, they might have seen where things were going.</p>
+<p>At one point, a couple of “representatives” from Bank of America addressed the crowd, satirizing the bank’s all too real connection to the U.N. and its upcoming Conference on Sustainable Development in Rio de Janeiro this June. One of them announced:</p>
+<p>    The most exciting news of the day is that we have accepted U.N. Secretary General Ban Ki Moon’s invitation to permanently occupy the U.N. climate conference. Our hats go off to the Occupy movement for this concept of occupation, and we feel that we at Bank of America are well-equipped to realize the full free-market potential.</p>
+<p>Join NationofChange today by making a generous tax-deductible contribution and take a stand against the status quo.</p>
+<p>After wrapping up their discussion of the many ways Bank of America metaphorically occupies the U.N. to build a consensus around deregulation as the main vehicle for international development, the “representatives” invited the crowd to visit their physical occupation. As if that wasn’t quite enough to tip off the police, an OWS organizer then belted out the day’s objective:</p>
+<p>    Today when we march, we are not going to get arrested. We want the 1 percent to get arrested. We’re going to have fun and we’re going to put pressure upon this great institution. … And we’re going to be peaceful and jubilant to show just how peaceful we can be as opposed to this violent system.</p>
+<p>Police officers then processed along with the protesters toward United Nations Plaza. But as soon as the march turned the corner, and the corporate tents came into full view, the officers took off, leaving the protesters in the dust. Within minutes the suit-wearing culprits were arrested beside their tents. Not having planned for this, however, the police had nowhere to put them. So while they waited for a van to arrive, the handcuffed 1 percenters stood and shouted to the protesters still marching peacefully across the street.</p>
+<p>    Bloomberg is in our pocket! … We control everything! … We have PR companies, the media, Obama, Congress! … I just invested $5 million in a Super PAC, I’m good! … We will be released soon, don’t worry! … Those are the occupiers you should be arresting!</p>
+<p>Rebecca Manski, who helped organize the action and was among the five arrested, said the police really didn’t get that she and the others were just pretending to be corporate executives. “They were totally fooled by 1-percent appearance,” Manski explained. “They thought we were of a different class — maybe not the 1 percent exactly — but their perception was challenged of what a protester looks like.”</p>
+<p>Seeing the protesters in different clothes seemed to make a big difference. Some of the officers had just come from Union Square, where the situation was tense after a long, angry march from Zuccotti Park. Manski actually overheard her arresting officer talk about being called “a goon” earlier in the day. The officer could hardly believe that Manski and the other suits were from the same protest movement.</p>
+<p>OWS legal consul typically advises protesters not to speak with police officers once they’ve been arrested, but Manski decided to bend the rules. She apologized for the name-calling and was treated so gently that she wasn’t even sure where she was supposed to go. Eventually, she found her way into the police van, where an officer actually told her, “I’m sorry we had to arrest you today. We support what you are doing.”</p>
+<p>Once at the station, the arrestees continued to be treated well. Manski reports that when one officer began complaining that they were to blame for him having to work overtime on a Saturday night, another corrected him, saying, “No, it’s the banks’ fault.” The first officer ended up agreeing, and he added, “It’s the banks’ fault and the 1 percent’s fault.” Both officers then worked to get everyone released that day, when originally it seemed that some were going to have to spend the night in jail.</p>
+<p>“They were getting the connection between the banks and abusive power,” says Manski. Much to her relief, the day’s action had brought attention back to the issues and those who need to be held accountable. She couldn’t help but wonder about possible next steps: “Wouldn’t it be great to have a whole march on Wall Street with everyone dressed as bankers?”</p>
+</div></div></div><div class="field field-name-field-tags field-type-taxonomy-term-reference field-label-above clearfix"><h3 class="field-label">Tags: </h3><ul class="links"><li class="taxonomy-term-reference-0" rel="dc:subject"><a href="/tags/opesr" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">OpESR</a></li></ul></div>  </div>
+
+      <div class="link-wrapper">
+      <ul class="links inline"><li class="comment_forbidden first"><span><a href="/user/login?destination=node/49%23comment-form">Log in</a> to post comments</span></li>
+<li class="tweet_Twitter last"><a href="http://twitter.com/?status=Finally%2C%20%23OWS%20gets%20Police%20to%20Arrest%20the%20%E2%80%A6%20http%3A//live-opesr.pantheonsite.io/article/finally-ows-gets-police-arrest-people-suits%20via%20%40Op_ESR" class="tweet" rel="nofollow" target="_blank"><img typeof="foaf:Image" src="/sites/all/modules/tweet/twitter.png" alt="Post to Twitter" title="Post to Twitter" /> Post to Twitter</a></li>
+</ul>    </div>
+  
+  
+</div>
+  </div>
+</div>
+  </div>
+      
+    </div></div> <!-- /.section, /#content -->
+
+    
+  </div></div> <!-- /#main, /#main-wrapper -->
+
+      <div id="triptych-wrapper"><div id="triptych" class="clearfix">
+        <div class="region region-triptych-first">
+    <div id="block-media-gallery-7" class="block block-media-gallery">
+
+    <h2>OpESR</h2>
+  
+  <div class="content">
+    <div id="node-7" class="node node-media-gallery clearfix" about="/gallery/opesr" typeof="sioc:Item foaf:Document">
+
+        <h2>
+      <a href="/gallery/opesr"></a>
+    </h2>
+    <span property="dc:title" content="OpESR" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>
+  
+  <div class="content clearfix">
+    <div class="field field-name-media-gallery-media field-type-media field-label-hidden clearfix media-gallery-media mg-col mg-col-2"><div class="field-items"><div class="field-item even" id="media-gallery-media-0"><div class="media-gallery-item-wrapper"><div class="media-gallery-item"><div class="top"><div class="top-inset-1"><div class="top-inset-2"></div></div></div><div class="gallery-thumb-outer"><div class="gallery-thumb-inner"><a href="/media-gallery/detail/7/80" class="media-gallery-thumb cbEnabled"><img typeof="foaf:Image" src="/sites/default/files/styles/media_gallery_thumbnail/public/media-youtube/RCX8RBGZSTg.jpg" width="450" height="450" alt="Anonymous - The Bankers Are The Problem" /></a></div></div><div class="bottom"><div class="bottom-inset-1"><div class="bottom-inset-2"></div></div></div></div></div></div><div class="field-item odd" id="media-gallery-media-1"><div class="media-gallery-item-wrapper"><div class="media-gallery-item"><div class="top"><div class="top-inset-1"><div class="top-inset-2"></div></div></div><div class="gallery-thumb-outer"><div class="gallery-thumb-inner"><a href="/media-gallery/detail/7/24" class="media-gallery-thumb cbEnabled"><img typeof="foaf:Image" src="/sites/default/files/styles/media_gallery_thumbnail/public/media-youtube/sO3lnIC4bCE.jpg" width="450" height="450" alt="sO3lnIC4bCE" /></a></div></div><div class="bottom"><div class="bottom-inset-1"><div class="bottom-inset-2"></div></div></div></div></div></div><div class="field-item even" id="media-gallery-media-2"><div class="media-gallery-item-wrapper"><div class="media-gallery-item"><div class="top"><div class="top-inset-1"><div class="top-inset-2"></div></div></div><div class="gallery-thumb-outer"><div class="gallery-thumb-inner"><a href="/media-gallery/detail/7/23" class="media-gallery-thumb cbEnabled"><img typeof="foaf:Image" src="/sites/default/files/styles/media_gallery_thumbnail/public/media-youtube/CLzI3Qysa50.jpg" width="450" height="450" alt="CLzI3Qysa50" /></a></div></div><div class="bottom"><div class="bottom-inset-1"><div class="bottom-inset-2"></div></div></div></div></div></div><div class="field-item odd" id="media-gallery-media-3"><div class="media-gallery-item-wrapper"><div class="media-gallery-item"><div class="top"><div class="top-inset-1"><div class="top-inset-2"></div></div></div><div class="gallery-thumb-outer"><div class="gallery-thumb-inner"><a href="/media-gallery/detail/7/21" class="media-gallery-thumb cbEnabled"><img typeof="foaf:Image" src="/sites/default/files/styles/media_gallery_thumbnail/public/media-youtube/B7YnRzzGUpk.jpg" width="450" height="450" alt="B7YnRzzGUpk" /></a></div></div><div class="bottom"><div class="bottom-inset-1"><div class="bottom-inset-2"></div></div></div></div></div></div></div></div>  </div>
+
+  
+  
+</div>
+<div class="more-link"><a href="/gallery/opesr" title="Show the complete gallery">More</a></div>  </div>
+</div>
+  </div>
+        <div class="region region-triptych-middle">
+    <div id="block-media-gallery-9" class="block block-media-gallery">
+
+    <h2>Occupy</h2>
+  
+  <div class="content">
+    <div id="node-9" class="node node-media-gallery clearfix" about="/gallery/occupy" typeof="sioc:Item foaf:Document">
+
+        <h2>
+      <a href="/gallery/occupy"></a>
+    </h2>
+    <span property="dc:title" content="Occupy" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>
+  
+  <div class="content clearfix">
+    <div class="field field-name-media-gallery-media field-type-media field-label-hidden clearfix media-gallery-media mg-col mg-col-2"><div class="field-items"><div class="field-item even" id="media-gallery-media-0"><div class="media-gallery-item-wrapper"><div class="media-gallery-item"><div class="top"><div class="top-inset-1"><div class="top-inset-2"></div></div></div><div class="gallery-thumb-outer"><div class="gallery-thumb-inner"><a href="/media-gallery/detail/9/54" class="media-gallery-thumb cbEnabled"><img typeof="foaf:Image" src="/sites/default/files/styles/media_gallery_thumbnail/public/media-youtube/u49U_jzn6GQ.jpg" width="450" height="450" alt="u49U_jzn6GQ" /></a></div></div><div class="bottom"><div class="bottom-inset-1"><div class="bottom-inset-2"></div></div></div></div></div></div><div class="field-item odd" id="media-gallery-media-1"><div class="media-gallery-item-wrapper"><div class="media-gallery-item"><div class="top"><div class="top-inset-1"><div class="top-inset-2"></div></div></div><div class="gallery-thumb-outer"><div class="gallery-thumb-inner"><a href="/media-gallery/detail/9/34" class="media-gallery-thumb cbEnabled"><img typeof="foaf:Image" src="/sites/default/files/styles/media_gallery_thumbnail/public/media-youtube/Xb9mJsiDJ7k.jpg" width="450" height="450" alt="Xb9mJsiDJ7k" /></a></div></div><div class="bottom"><div class="bottom-inset-1"><div class="bottom-inset-2"></div></div></div></div></div></div><div class="field-item even" id="media-gallery-media-2"><div class="media-gallery-item-wrapper"><div class="media-gallery-item"><div class="top"><div class="top-inset-1"><div class="top-inset-2"></div></div></div><div class="gallery-thumb-outer"><div class="gallery-thumb-inner"><a href="/media-gallery/detail/9/35" class="media-gallery-thumb cbEnabled"><img typeof="foaf:Image" src="/sites/default/files/styles/media_gallery_thumbnail/public/media-youtube/mW_nDBKybVg.jpg" width="450" height="450" alt="mW_nDBKybVg" /></a></div></div><div class="bottom"><div class="bottom-inset-1"><div class="bottom-inset-2"></div></div></div></div></div></div><div class="field-item odd" id="media-gallery-media-3"><div class="media-gallery-item-wrapper"><div class="media-gallery-item"><div class="top"><div class="top-inset-1"><div class="top-inset-2"></div></div></div><div class="gallery-thumb-outer"><div class="gallery-thumb-inner"><a href="/media-gallery/detail/9/37" class="media-gallery-thumb cbEnabled"><img typeof="foaf:Image" src="/sites/default/files/styles/media_gallery_thumbnail/public/media-youtube/LhhTvK2etNs.jpg" width="450" height="450" alt="LhhTvK2etNs" /></a></div></div><div class="bottom"><div class="bottom-inset-1"><div class="bottom-inset-2"></div></div></div></div></div></div></div></div>  </div>
+
+  
+  
+</div>
+<div class="more-link"><a href="/gallery/occupy" title="Show the complete gallery">More</a></div>  </div>
+</div>
+  </div>
+        <div class="region region-triptych-last">
+    <div id="block-media-gallery-53" class="block block-media-gallery">
+
+    <h2>FTP</h2>
+  
+  <div class="content">
+    <div id="node-53" class="node node-media-gallery node-promoted clearfix" about="/gallery/ftp" typeof="sioc:Item foaf:Document">
+
+        <h2>
+      <a href="/gallery/ftp"></a>
+    </h2>
+    <span property="dc:title" content="FTP" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>
+  
+  <div class="content clearfix">
+    <div class="field field-name-media-gallery-media field-type-media field-label-hidden clearfix media-gallery-media mg-col mg-col-2"><div class="field-items"><div class="field-item even" id="media-gallery-media-0"><div class="media-gallery-item-wrapper"><div class="media-gallery-item"><div class="top"><div class="top-inset-1"><div class="top-inset-2"></div></div></div><div class="gallery-thumb-outer"><div class="gallery-thumb-inner"><a href="/media-gallery/detail/53/76" class="media-gallery-thumb cbEnabled"><img typeof="foaf:Image" src="/sites/default/files/styles/media_gallery_thumbnail/public/media-youtube/GksTJeB5J3E.jpg" width="450" height="450" alt="Folder 01, Det. Pierre (Broadway &amp; Cortland) VIDEO: M2U00011" /></a></div></div><div class="bottom"><div class="bottom-inset-1"><div class="bottom-inset-2"></div></div></div></div></div></div><div class="field-item odd" id="media-gallery-media-1"><div class="media-gallery-item-wrapper"><div class="media-gallery-item"><div class="top"><div class="top-inset-1"><div class="top-inset-2"></div></div></div><div class="gallery-thumb-outer"><div class="gallery-thumb-inner"><a href="/media-gallery/detail/53/75" class="media-gallery-thumb cbEnabled"><img typeof="foaf:Image" src="/sites/default/files/styles/media_gallery_thumbnail/public/media-youtube/Y3OCtfanNx4.jpg" width="450" height="450" alt="Folder 01, Det. Pierre (Broadway &amp; Cortland) VIDEO: M2U00012" /></a></div></div><div class="bottom"><div class="bottom-inset-1"><div class="bottom-inset-2"></div></div></div></div></div></div><div class="field-item even" id="media-gallery-media-2"><div class="media-gallery-item-wrapper"><div class="media-gallery-item"><div class="top"><div class="top-inset-1"><div class="top-inset-2"></div></div></div><div class="gallery-thumb-outer"><div class="gallery-thumb-inner"><a href="/media-gallery/detail/53/74" class="media-gallery-thumb cbEnabled"><img typeof="foaf:Image" src="/sites/default/files/styles/media_gallery_thumbnail/public/media-youtube/i2lUKOV-qA0.jpg" width="450" height="450" alt="Folder 09, P.O. Telese 1 of 2 (Park Eviction): VIDEO: M2U00010" /></a></div></div><div class="bottom"><div class="bottom-inset-1"><div class="bottom-inset-2"></div></div></div></div></div></div><div class="field-item odd" id="media-gallery-media-3"><div class="media-gallery-item-wrapper"><div class="media-gallery-item"><div class="top"><div class="top-inset-1"><div class="top-inset-2"></div></div></div><div class="gallery-thumb-outer"><div class="gallery-thumb-inner"><a href="/media-gallery/detail/53/73" class="media-gallery-thumb cbEnabled"><img typeof="foaf:Image" src="/sites/default/files/styles/media_gallery_thumbnail/public/media-youtube/fTRKS_cQ_gk.jpg" width="450" height="450" alt="Folder 09, P.O. Telese 1 of 2 (Park Eviction): VIDEO: 20111115010652" /></a></div></div><div class="bottom"><div class="bottom-inset-1"><div class="bottom-inset-2"></div></div></div></div></div></div></div></div>  </div>
+
+  
+  
+</div>
+<div class="more-link"><a href="/gallery/ftp" title="Show the complete gallery">More</a></div>  </div>
+</div>
+  </div>
+    </div></div> <!-- /#triptych, /#triptych-wrapper -->
+  
+  <div id="footer-wrapper"><div class="section">
+
+    
+    
+  </div></div> <!-- /.section, /#footer-wrapper -->
+
+</div></div> <!-- /#page, /#page-wrapper -->
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"aa6c0166f7","applicationID":"3569351","transactionName":"MlIAbUNYDxVUVRBeWQsYI1pFUA4IGlgLU1M6RwNeVGYXD1BB","queueTime":0,"applicationTime":128,"atts":"HhUDGwtCHBs=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

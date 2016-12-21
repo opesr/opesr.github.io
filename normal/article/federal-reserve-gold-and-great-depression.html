@@ -1,0 +1,274 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-998.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+<link rel="shortlink" href="/node/75" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="/article/federal-reserve-gold-and-great-depression" />
+  <title>Federal Reserve, Gold, and the Great Depression  | OpESR</title>
+  <link type="text/css" rel="stylesheet" href="/sites/default/files/css/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/sites/default/files/css/css_xi_BRWGJrI1YNPkmKHvIQffmbwzxHXwWoqWT2ZHqPo4.css" media="screen" />
+<link type="text/css" rel="stylesheet" href="/sites/default/files/css/css_0_KYL24ZFbw2f7LbtKfXhnOyQoZOKYWHiXsWj2DCPK8.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/sites/default/files/css/css_7_nIe9s9x7xDr3xevw0X_MvPGE877wzuC0A8oz6u2aQ.css" media="all" />
+
+<!--[if lt IE 8]>
+<link type="text/css" rel="stylesheet" href="/sites/default/files/css/css_VyKHcoC2vkE6vSZy1096yGnGRXchk2qXI7pn80r5cvw.css" media="all" />
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="/sites/default/files/css/css_24VwYIeQPnPJg9p4mvTlo-SPhof77pbbsMlbHgUmW90.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/sites/default/files/css/css_2THG1eGiBIizsWFeexsNe1iDifJ00QRS9uSd03rY9co.css" media="print" />
+
+<!--[if lte IE 7]>
+<link type="text/css" rel="stylesheet" href="/themes/bartik/css/ie.css?" media="all" />
+<![endif]-->
+
+<!--[if IE 6]>
+<link type="text/css" rel="stylesheet" href="/themes/bartik/css/ie6.css?" media="all" />
+<![endif]-->
+  <script type="text/javascript" src="/sites/default/files/js/js_Xjzh1hVfcgVAixhmmB6Go8TUMPOiprA-2vkC-oWXARQ.js"></script>
+<script type="text/javascript" src="/sites/default/files/js/js_CnVjeK75WybhZPt5LIjxPFFChsSvirFJZ4QJHLcK6Rw.js"></script>
+<script type="text/javascript" src="/sites/default/files/js/js_X0oRoJDG3zwPG_dGqqLX5v1FaNVaVAMoFcdJGSRFRVM.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"bartik","theme_token":"W4rC0MrcJSJEpgaNFgfVCCuitgmRNQu3KygMnbiR4b4","js":{"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/libraries\/colorbox\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/modules\/media_gallery\/colorbox-display.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/libraries\/colorbox\/example1\/colorbox.css":1,"sites\/all\/modules\/calendar\/css\/calendar_multiday.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/media_gallery\/media_gallery.css":1,"sites\/all\/modules\/media_gallery\/media_gallery.ie7.css":1,"themes\/bartik\/css\/layout.css":1,"themes\/bartik\/css\/style.css":1,"themes\/bartik\/css\/colors.css":1,"themes\/bartik\/css\/print.css":1,"themes\/bartik\/css\/ie.css":1,"themes\/bartik\/css\/ie6.css":1}}});
+//--><!]]>
+</script>
+</head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-75 node-type-article triptych" >
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+    <div id="page-wrapper"><div id="page">
+
+  <div id="header" class="without-secondary-menu"><div class="section clearfix">
+
+    
+          <div id="name-and-slogan">
+
+                              <div id="site-name">
+              <strong>
+                <a href="/" title="Home" rel="home"><span>OpESR</span></a>
+              </strong>
+            </div>
+                  
+                  <div id="site-slogan">
+            Operation Empire State Rebellion          </div>
+        
+      </div> <!-- /#name-and-slogan -->
+    
+    
+          <div id="main-menu" class="navigation">
+        <h2 class="element-invisible">Main menu</h2><ul id="main-menu-links" class="links clearfix"><li class="menu-227 first"><a href="/">Home</a></li>
+<li class="menu-434"><a href="/about" title="About OpESR">About</a></li>
+<li class="menu-656"><a href="/gallery-collections/galleries" title="">Galleries</a></li>
+<li class="menu-432 last"><a href="/location/map" title="Assembly Map">Map</a></li>
+</ul>      </div> <!-- /#main-menu -->
+    
+    
+  </div></div> <!-- /.section, /#header -->
+
+  
+  
+  <div id="main-wrapper" class="clearfix"><div id="main" class="clearfix">
+
+          <div id="breadcrumb"><h2 class="element-invisible">You are here</h2><div class="breadcrumb"><a href="/">Home</a></div></div>
+    
+    
+    <div id="content" class="column"><div class="section">
+            <a id="main-content"></a>
+                    <h1 class="title" id="page-title">
+          Federal Reserve, Gold, and the Great Depression         </h1>
+                          <div class="tabs">
+                  </div>
+                          <div class="region region-content">
+    <div id="block-system-main" class="block block-system">
+
+    
+  <div class="content">
+    <div id="node-75" class="node node-article node-promoted node-full clearfix" about="/article/federal-reserve-gold-and-great-depression" typeof="sioc:Item foaf:Document">
+
+      <span property="dc:title" content="Federal Reserve, Gold, and the Great Depression " class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="1" datatype="xsd:integer" class="rdf-meta element-hidden"></span>
+      <div class="meta submitted">
+        <div class="user-picture">
+    <img typeof="foaf:Image" src="/sites/default/files/styles/thumbnail/public/pictures/picture-1615-1367988732.jpg" alt="GaryWebb72&#039;s picture" title="GaryWebb72&#039;s picture" />  </div>
+      <span property="dc:date dc:created" content="2013-05-26T19:04:50-05:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" about="/users/garywebb72" typeof="sioc:UserAccount" property="foaf:name" datatype="">GaryWebb72</span> on Sun, 2013-05-26 19:04</span>    </div>
+  
+  <div class="content clearfix">
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>In 1933 FDR issued an order that there was to be no “hoarding” of gold. In documentation from early 1930s it shows that this was ordered. People of America were to turn in their gold over to the Federal Reserve Bank in exchange for paper dollars. They made it in fact against the law to possess gold. The question is though, what about big companies and corporations? Did they in fact turn their gold over to the Federal Reserve in exchange for paper dollars? What about powerful families like Rockefeller and Rothschild? Did they too turn their gold in for paper money?  There had to be other people out there who did not turn in their gold. Who was it? Was it a group of business people or maybe a political group?</p>
+<p>		In a letter dated March 20, 1933 to the Federal Reserve of St. Louis, it stated:</p>
+<p>TO THE MEMBER BANK ADDRESSED:<br />
+(Also for the information of nonmember banks) </p>
+<p>	Our letter dated March 8, 1933 has been further amended as follows:<br />
+		“We have been requested to prepare and forward to the Federal Reserve Board as soon as possible after March 27, 1933, as complete a list as can be made from information we are able to obtain of the names and addresses of all persons who have withdrawn gold from this bank to a member bank in this district since February 1, 1933, and who have not redeposit it in a bank on or before March 27, 1933.”<br />
+		“It will therefore be appreciated if you will cooperate with us to the extent of furnishing us with the names and address of all persons who have withdrawn gold from your bank since February 1, 1933, and who have not, to your knowledge, redeposited it in the bank on or before March 27, 1933. This information to be furnished to us as soon as you conveniently can after the date mentioned.”</p>
+<p>	       The two above statements where in a letter addressed to the Federal Reserve Bank of St. Louis in District 8 of the United States. The letter was from WM. McC. MARTIN Governor</p>
+<p>               Since the President, the Federal Reserve, and the Treasurer were demanding people to turn in their gold, what were the guarantees that other powerful people were doing this as well? Did prominent politicians put in their fair share?  Did no one question these bank holidays and orders that the Federal Reserve enforced? If people do not remember their history they are doomed to repeat it. </p>
+<p>	      When looking at these early documents from the Federal Reserve it seems as though there was some systematic plan to take the world economy off physically worth monetary value and back it by credit and promises. They slowly killed the dollar over the years after economic crisis after economic crisis. FDR took the US off gold and silver. Nixon followed suit by further pushing along these financial plans. With an agreement with the IMF for rate change. Thereby basing the global economy off promise and credit; the world governments then used its agencies to promote debt, credit, and loans. Trying to make it seem as normal as possible; All the while using these agencies to control people and countries: World Bank, IMF, and BIS. </p>
+<p>	This is exactly why:</p>
+<p>•	Corporations, factories, companies, etc. no longer pay their employees (middle/working poor class) in cash money.  Like they use to. </p>
+<p>•	Banks told “corporations” use our “paychecks” instead of paying your employees cash. While your employees need a “safe” place for their “money”, it will be convenient   for your “corporation” and cost effective.  In present day banking people do not even get a “paycheck” anymore. They have debit cards and direct deposit to receive their payment for their labor.</p>
+<p>•	In 1970 Nixon closed the “gold window” putting the final nail in the coffin of the US dollar being backed by gold. Further diminishing the money giving more power to the Federal Reserve to print off as much money as they wanted.  Hence worthless money cannot buy what people could years and years ago.</p>
+<p>•	The culture of the United States changed along with the new monetary system. People purchased more “wants” instead of “needs”; no one saved their money before making a big purchase. People took out more loans and used more credit cards. Today’s culture is about money and power; exploiting others for profits. They glorify this behavior now. </p>
+<p>Economic Hit Men</p>
+<p>	       As the global economy emerged into using money that has no value based on only credit and promises; the world started to take loans to pay off debts and stabilize their economies.  Many countries around the world took loans from agencies like the IMF and World Bank.  These agencies were created by the same people who no longer wanted the world economic system to be based on any real value.  They use their loans to control other countries through agreements; agents like the IMF create, binding those countries. They know that the countries will not be able to pay back the money because of the terms that they agree to. With examples like Spain and Greece they make their poor populations pay for their loans. While they make sure none of the government officials&#039; money is used. </p>
+<p>They Have All the Gold</p>
+<p>	    According to the World Gold Council’s World_Official_Gold_Holdings_as_of_May2013_IFS (1).pdf;<br />
+The United States, Germany, and the IMF hold the most gold in the world. How did they achieve this? Some people may ask. Germany confiscated gold from Jews and citizens alike. They also took gold from countries they invaded. Yet they are still the second largest holder of gold. Even after the allies took Germany’s gold. The United States in the 1930s made it illegal to possess gold and confiscated gold from their citizens, as the Germans did during the 30s. According to the IMF it gets its money from member countries. The IMF does not specify though how it accumulated so much gold. Saying that the IMF is strictly limited to using gold and member countries would have to vote whether to sell or buy. Yet, the IMF has so much.   What the IMF says about its gold holdings. The following is from the IMF website: </p>
+<p>	Gold holdings</p>
+<p>            “The IMF’s gold holdings amount to about 90.5 million troy ounces (2,814.1 metric tons), making the IMF the third largest official holder of gold in the world. However, the IMF’s Articles of Agreement strictly limit its use. If approved by an 85 percent majority of voting power of member countries, the IMF may sell gold or may accept gold as payment by member countries but it is prohibited from buying gold or engaging in other gold transactions.</p>
+<p>            In December 2010, the IMF concluded the limited sales program covering 403.3 metric tons of gold, accounting for about one-eighth of its holdings, as approved by the Executive Board in September 2009. Sales totaling 222 tons were made to official holders, including the Reserve Bank of India (200 tons), the Bank of Mauritius (2 tons), the Central Bank of Sri Lanka (10 tons), and the Bangladesh Bank (10 tons). The gold sale program was conducted under strong safeguards to avoid market disruption and all gold sales were at market prices, including direct sales to official holders.</p>
+<p>            Profits of SDR 4.4 billion on the sale will fund an endowment as part of the IMF’s new income model, agreed to put the institution’s finances on a sustainable footing. The Executive Board also agreed that SDR 0.5–0.6 billion (end-2008 net present value terms) in resources linked to gold sales would be used to subsidize financing for low-income countries and boost the IMF’s concessional lending for 2009-14.</p>
+<p>            In February 2012, the Executive Board approved the partial distribution of the Fund’s general reserve to the membership of SDR 700 million from the windfall profits of the recent gold sales. The distribution became effective in October, 2012 when members representing over 90 percent of the distribution had provided satisfactory assurances that the resources would be made available for the Poverty Reduction and Growth Trust (PRGT).</p>
+<p>            In September 2012 the Executive Board approved a second distribution of the Fund’s general reserves attributed to the remaining gold sales profits as part of a strategy to make the PRGT sustainable in the longer term.”   </p>
+<p>	    If gold is so unimportant and the global economy no longer really uses it; why is it so many countries and organizations have so much of it? They did not want the common person to hoard it. They did not want people of lower classes to have it. Now they have the majority of it. What is the purpose? Control? Power?<br />
+	   The point is, if the monetary system is being run by the organized criminal class, the rest of “us” will be doomed to “obey” their laws and give them “our” labor. If people do not question and simply follow, we will never truly be free. If we, the people, blindly accept things for what we think they are, nothing will really change. There is a small group of people at the top who have been controlling and manipulating things for years and years. If people choose not to ask questions, not to challenge “authority” we will repeat history over and over again. We must stay vigilant in our learning and what we can do to change things for the better. </p>
+<p>References:<br />
+<a href="https://www.imf.org/external/np/exr/facts/finfac.htm">https://www.imf.org/external/np/exr/facts/finfac.htm</a><br />
+<a href="http://www.mediafire.com/?6c13fhidhhm1rfu">http://www.mediafire.com/?6c13fhidhhm1rfu</a><br />
+<a href="http://www.mediafire.com/?30636ofdi82fc58">http://www.mediafire.com/?30636ofdi82fc58</a><br />
+<a href="http://www.mediafire.com/?y8zrx2k24j90dy8">http://www.mediafire.com/?y8zrx2k24j90dy8</a><br />
+<a href="http://www.mediafire.com/?023sy0g40y9v6un">http://www.mediafire.com/?023sy0g40y9v6un</a><br />
+<a href="http://www.archives.gov/research/holocaust/bibliographies/nazi-gold.html">http://www.archives.gov/research/holocaust/bibliographies/nazi-gold.html</a></p>
+</div></div></div><div class="field field-name-field-link field-type-link-field field-label-above"><div class="field-label">Links:&nbsp;</div><div class="field-items"><div class="field-item even"><a href="https://www.imf.org/external/np/exr/facts/finfac.htm">IMF</a></div><div class="field-item odd"><a href="http://www.archives.gov/research/holocaust/bibliographies/nazi-gold.html">Nazi Gold </a></div></div></div><div class="field field-name-field-tags field-type-taxonomy-term-reference field-label-above clearfix"><h3 class="field-label">Tags: </h3><ul class="links"><li class="taxonomy-term-reference-0" rel="dc:subject"><a href="/tags/opesr" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">OpESR</a></li><li class="taxonomy-term-reference-1" rel="dc:subject"><a href="/tags/ows" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">OWS</a></li><li class="taxonomy-term-reference-2" rel="dc:subject"><a href="/tags/gold" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">Gold</a></li><li class="taxonomy-term-reference-3" rel="dc:subject"><a href="/tags/federal-reserve" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">Federal Reserve</a></li><li class="taxonomy-term-reference-4" rel="dc:subject"><a href="/tags/banking" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">Banking</a></li><li class="taxonomy-term-reference-5" rel="dc:subject"><a href="/tags/imf" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">IMF</a></li></ul></div>  </div>
+
+      <div class="link-wrapper">
+      <ul class="links inline"><li class="comment_forbidden first"><span><a href="/user/login?destination=node/75%23comment-form">Log in</a> to post comments</span></li>
+<li class="tweet_Twitter last"><a href="http://twitter.com/?status=Federal%20Reserve%2C%20Gold%2C%20and%20the%20Great%20Depre%E2%80%A6%20http%3A//live-opesr.pantheonsite.io/article/federal-reserve-gold-and-great-depression%20via%20%40Op_ESR" class="tweet" rel="nofollow" target="_blank"><img typeof="foaf:Image" src="/sites/all/modules/tweet/twitter.png" alt="Post to Twitter" title="Post to Twitter" /> Post to Twitter</a></li>
+</ul>    </div>
+  
+  <div id="comments" class="comment-wrapper">
+          <h2 class="title">Comments</h2>
+      
+  
+<div class="indented"><a id="comment-72"></a>
+<div class="comment comment-by-node-author clearfix" about="/comment/72#comment-72" typeof="sioc:Post sioct:Comment">
+
+  <div class="attribution">
+
+      <div class="user-picture">
+    <img typeof="foaf:Image" src="/sites/default/files/styles/thumbnail/public/pictures/picture-1615-1367988732.jpg" alt="GaryWebb72&#039;s picture" title="GaryWebb72&#039;s picture" />  </div>
+
+    <div class="submitted">
+      <p class="commenter-name">
+        <span rel="sioc:has_creator"><span class="username" xml:lang="" about="/users/garywebb72" typeof="sioc:UserAccount" property="foaf:name" datatype="">GaryWebb72</span></span>      </p>
+      <p class="comment-time">
+        <span property="dc:date dc:created" content="2013-12-01T00:34:46-06:00" datatype="xsd:dateTime">Sun, 2013-12-01 00:34</span>      </p>
+      <p class="comment-permalink">
+        <a href="/comment/72#comment-72" class="permalink" rel="bookmark">Permalink</a>      </p>
+    </div>
+  </div>
+
+  <div class="comment-text">
+    <div class="comment-arrow"></div>
+
+    
+        <h3 property="dc:title" datatype=""><a href="/comment/72#comment-72" class="permalink" rel="bookmark">roadEnd</a></h3>
+    
+    <div class="content">
+      <span rel="sioc:reply_of" resource="/article/federal-reserve-gold-and-great-depression" class="rdf-meta element-hidden"></span><span rel="sioc:reply_of" resource="/comment/70#comment-70" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Explain to me what payday loans have to do with anything relevant on this page?</p>
+</div></div></div>          </div> <!-- /.content -->
+
+    <ul class="links inline"><li class="comment_forbidden first last"><span><a href="/user/login?destination=node/75%23comment-form">Log in</a> to post comments</span></li>
+</ul>  </div> <!-- /.comment-text -->
+</div>
+</div>
+  </div>
+
+</div>
+  </div>
+</div>
+  </div>
+      
+    </div></div> <!-- /.section, /#content -->
+
+    
+  </div></div> <!-- /#main, /#main-wrapper -->
+
+      <div id="triptych-wrapper"><div id="triptych" class="clearfix">
+        <div class="region region-triptych-first">
+    <div id="block-media-gallery-7" class="block block-media-gallery">
+
+    <h2>OpESR</h2>
+  
+  <div class="content">
+    <div id="node-7" class="node node-media-gallery clearfix" about="/gallery/opesr" typeof="sioc:Item foaf:Document">
+
+        <h2>
+      <a href="/gallery/opesr"></a>
+    </h2>
+    <span property="dc:title" content="OpESR" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>
+  
+  <div class="content clearfix">
+    <div class="field field-name-media-gallery-media field-type-media field-label-hidden clearfix media-gallery-media mg-col mg-col-2"><div class="field-items"><div class="field-item even" id="media-gallery-media-0"><div class="media-gallery-item-wrapper"><div class="media-gallery-item"><div class="top"><div class="top-inset-1"><div class="top-inset-2"></div></div></div><div class="gallery-thumb-outer"><div class="gallery-thumb-inner"><a href="/media-gallery/detail/7/80" class="media-gallery-thumb cbEnabled"><img typeof="foaf:Image" src="/sites/default/files/styles/media_gallery_thumbnail/public/media-youtube/RCX8RBGZSTg.jpg" width="450" height="450" alt="Anonymous - The Bankers Are The Problem" /></a></div></div><div class="bottom"><div class="bottom-inset-1"><div class="bottom-inset-2"></div></div></div></div></div></div><div class="field-item odd" id="media-gallery-media-1"><div class="media-gallery-item-wrapper"><div class="media-gallery-item"><div class="top"><div class="top-inset-1"><div class="top-inset-2"></div></div></div><div class="gallery-thumb-outer"><div class="gallery-thumb-inner"><a href="/media-gallery/detail/7/24" class="media-gallery-thumb cbEnabled"><img typeof="foaf:Image" src="/sites/default/files/styles/media_gallery_thumbnail/public/media-youtube/sO3lnIC4bCE.jpg" width="450" height="450" alt="sO3lnIC4bCE" /></a></div></div><div class="bottom"><div class="bottom-inset-1"><div class="bottom-inset-2"></div></div></div></div></div></div><div class="field-item even" id="media-gallery-media-2"><div class="media-gallery-item-wrapper"><div class="media-gallery-item"><div class="top"><div class="top-inset-1"><div class="top-inset-2"></div></div></div><div class="gallery-thumb-outer"><div class="gallery-thumb-inner"><a href="/media-gallery/detail/7/23" class="media-gallery-thumb cbEnabled"><img typeof="foaf:Image" src="/sites/default/files/styles/media_gallery_thumbnail/public/media-youtube/CLzI3Qysa50.jpg" width="450" height="450" alt="CLzI3Qysa50" /></a></div></div><div class="bottom"><div class="bottom-inset-1"><div class="bottom-inset-2"></div></div></div></div></div></div><div class="field-item odd" id="media-gallery-media-3"><div class="media-gallery-item-wrapper"><div class="media-gallery-item"><div class="top"><div class="top-inset-1"><div class="top-inset-2"></div></div></div><div class="gallery-thumb-outer"><div class="gallery-thumb-inner"><a href="/media-gallery/detail/7/21" class="media-gallery-thumb cbEnabled"><img typeof="foaf:Image" src="/sites/default/files/styles/media_gallery_thumbnail/public/media-youtube/B7YnRzzGUpk.jpg" width="450" height="450" alt="B7YnRzzGUpk" /></a></div></div><div class="bottom"><div class="bottom-inset-1"><div class="bottom-inset-2"></div></div></div></div></div></div></div></div>  </div>
+
+  
+  
+</div>
+<div class="more-link"><a href="/gallery/opesr" title="Show the complete gallery">More</a></div>  </div>
+</div>
+  </div>
+        <div class="region region-triptych-middle">
+    <div id="block-media-gallery-9" class="block block-media-gallery">
+
+    <h2>Occupy</h2>
+  
+  <div class="content">
+    <div id="node-9" class="node node-media-gallery clearfix" about="/gallery/occupy" typeof="sioc:Item foaf:Document">
+
+        <h2>
+      <a href="/gallery/occupy"></a>
+    </h2>
+    <span property="dc:title" content="Occupy" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>
+  
+  <div class="content clearfix">
+    <div class="field field-name-media-gallery-media field-type-media field-label-hidden clearfix media-gallery-media mg-col mg-col-2"><div class="field-items"><div class="field-item even" id="media-gallery-media-0"><div class="media-gallery-item-wrapper"><div class="media-gallery-item"><div class="top"><div class="top-inset-1"><div class="top-inset-2"></div></div></div><div class="gallery-thumb-outer"><div class="gallery-thumb-inner"><a href="/media-gallery/detail/9/54" class="media-gallery-thumb cbEnabled"><img typeof="foaf:Image" src="/sites/default/files/styles/media_gallery_thumbnail/public/media-youtube/u49U_jzn6GQ.jpg" width="450" height="450" alt="u49U_jzn6GQ" /></a></div></div><div class="bottom"><div class="bottom-inset-1"><div class="bottom-inset-2"></div></div></div></div></div></div><div class="field-item odd" id="media-gallery-media-1"><div class="media-gallery-item-wrapper"><div class="media-gallery-item"><div class="top"><div class="top-inset-1"><div class="top-inset-2"></div></div></div><div class="gallery-thumb-outer"><div class="gallery-thumb-inner"><a href="/media-gallery/detail/9/34" class="media-gallery-thumb cbEnabled"><img typeof="foaf:Image" src="/sites/default/files/styles/media_gallery_thumbnail/public/media-youtube/Xb9mJsiDJ7k.jpg" width="450" height="450" alt="Xb9mJsiDJ7k" /></a></div></div><div class="bottom"><div class="bottom-inset-1"><div class="bottom-inset-2"></div></div></div></div></div></div><div class="field-item even" id="media-gallery-media-2"><div class="media-gallery-item-wrapper"><div class="media-gallery-item"><div class="top"><div class="top-inset-1"><div class="top-inset-2"></div></div></div><div class="gallery-thumb-outer"><div class="gallery-thumb-inner"><a href="/media-gallery/detail/9/35" class="media-gallery-thumb cbEnabled"><img typeof="foaf:Image" src="/sites/default/files/styles/media_gallery_thumbnail/public/media-youtube/mW_nDBKybVg.jpg" width="450" height="450" alt="mW_nDBKybVg" /></a></div></div><div class="bottom"><div class="bottom-inset-1"><div class="bottom-inset-2"></div></div></div></div></div></div><div class="field-item odd" id="media-gallery-media-3"><div class="media-gallery-item-wrapper"><div class="media-gallery-item"><div class="top"><div class="top-inset-1"><div class="top-inset-2"></div></div></div><div class="gallery-thumb-outer"><div class="gallery-thumb-inner"><a href="/media-gallery/detail/9/37" class="media-gallery-thumb cbEnabled"><img typeof="foaf:Image" src="/sites/default/files/styles/media_gallery_thumbnail/public/media-youtube/LhhTvK2etNs.jpg" width="450" height="450" alt="LhhTvK2etNs" /></a></div></div><div class="bottom"><div class="bottom-inset-1"><div class="bottom-inset-2"></div></div></div></div></div></div></div></div>  </div>
+
+  
+  
+</div>
+<div class="more-link"><a href="/gallery/occupy" title="Show the complete gallery">More</a></div>  </div>
+</div>
+  </div>
+        <div class="region region-triptych-last">
+    <div id="block-media-gallery-53" class="block block-media-gallery">
+
+    <h2>FTP</h2>
+  
+  <div class="content">
+    <div id="node-53" class="node node-media-gallery node-promoted clearfix" about="/gallery/ftp" typeof="sioc:Item foaf:Document">
+
+        <h2>
+      <a href="/gallery/ftp"></a>
+    </h2>
+    <span property="dc:title" content="FTP" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>
+  
+  <div class="content clearfix">
+    <div class="field field-name-media-gallery-media field-type-media field-label-hidden clearfix media-gallery-media mg-col mg-col-2"><div class="field-items"><div class="field-item even" id="media-gallery-media-0"><div class="media-gallery-item-wrapper"><div class="media-gallery-item"><div class="top"><div class="top-inset-1"><div class="top-inset-2"></div></div></div><div class="gallery-thumb-outer"><div class="gallery-thumb-inner"><a href="/media-gallery/detail/53/76" class="media-gallery-thumb cbEnabled"><img typeof="foaf:Image" src="/sites/default/files/styles/media_gallery_thumbnail/public/media-youtube/GksTJeB5J3E.jpg" width="450" height="450" alt="Folder 01, Det. Pierre (Broadway &amp; Cortland) VIDEO: M2U00011" /></a></div></div><div class="bottom"><div class="bottom-inset-1"><div class="bottom-inset-2"></div></div></div></div></div></div><div class="field-item odd" id="media-gallery-media-1"><div class="media-gallery-item-wrapper"><div class="media-gallery-item"><div class="top"><div class="top-inset-1"><div class="top-inset-2"></div></div></div><div class="gallery-thumb-outer"><div class="gallery-thumb-inner"><a href="/media-gallery/detail/53/75" class="media-gallery-thumb cbEnabled"><img typeof="foaf:Image" src="/sites/default/files/styles/media_gallery_thumbnail/public/media-youtube/Y3OCtfanNx4.jpg" width="450" height="450" alt="Folder 01, Det. Pierre (Broadway &amp; Cortland) VIDEO: M2U00012" /></a></div></div><div class="bottom"><div class="bottom-inset-1"><div class="bottom-inset-2"></div></div></div></div></div></div><div class="field-item even" id="media-gallery-media-2"><div class="media-gallery-item-wrapper"><div class="media-gallery-item"><div class="top"><div class="top-inset-1"><div class="top-inset-2"></div></div></div><div class="gallery-thumb-outer"><div class="gallery-thumb-inner"><a href="/media-gallery/detail/53/74" class="media-gallery-thumb cbEnabled"><img typeof="foaf:Image" src="/sites/default/files/styles/media_gallery_thumbnail/public/media-youtube/i2lUKOV-qA0.jpg" width="450" height="450" alt="Folder 09, P.O. Telese 1 of 2 (Park Eviction): VIDEO: M2U00010" /></a></div></div><div class="bottom"><div class="bottom-inset-1"><div class="bottom-inset-2"></div></div></div></div></div></div><div class="field-item odd" id="media-gallery-media-3"><div class="media-gallery-item-wrapper"><div class="media-gallery-item"><div class="top"><div class="top-inset-1"><div class="top-inset-2"></div></div></div><div class="gallery-thumb-outer"><div class="gallery-thumb-inner"><a href="/media-gallery/detail/53/73" class="media-gallery-thumb cbEnabled"><img typeof="foaf:Image" src="/sites/default/files/styles/media_gallery_thumbnail/public/media-youtube/fTRKS_cQ_gk.jpg" width="450" height="450" alt="Folder 09, P.O. Telese 1 of 2 (Park Eviction): VIDEO: 20111115010652" /></a></div></div><div class="bottom"><div class="bottom-inset-1"><div class="bottom-inset-2"></div></div></div></div></div></div></div></div>  </div>
+
+  
+  
+</div>
+<div class="more-link"><a href="/gallery/ftp" title="Show the complete gallery">More</a></div>  </div>
+</div>
+  </div>
+    </div></div> <!-- /#triptych, /#triptych-wrapper -->
+  
+  <div id="footer-wrapper"><div class="section">
+
+    
+    
+  </div></div> <!-- /.section, /#footer-wrapper -->
+
+</div></div> <!-- /#page, /#page-wrapper -->
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"aa6c0166f7","applicationID":"3569351","transactionName":"MlIAbUNYDxVUVRBeWQsYI1pFUA4IGlgLU1M6RwNeVGYXD1BB","queueTime":0,"applicationTime":165,"atts":"HhUDGwtCHBs=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

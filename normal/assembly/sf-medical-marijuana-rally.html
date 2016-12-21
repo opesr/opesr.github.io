@@ -1,0 +1,390 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-998.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+<link rel="shortlink" href="/node/48" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="/assembly/sf-medical-marijuana-rally" />
+  <title>SF Medical Marijuana Rally | OpESR</title>
+  <link type="text/css" rel="stylesheet" href="/sites/default/files/css/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/sites/default/files/css/css_xi_BRWGJrI1YNPkmKHvIQffmbwzxHXwWoqWT2ZHqPo4.css" media="screen" />
+<link type="text/css" rel="stylesheet" href="/sites/default/files/css/css_0_KYL24ZFbw2f7LbtKfXhnOyQoZOKYWHiXsWj2DCPK8.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/sites/default/files/css/css_y-qHcGOh13EE-9DNOpn3dtkMflc876WcC5Hf4pG--rY.css" media="all" />
+
+<!--[if lt IE 8]>
+<link type="text/css" rel="stylesheet" href="/sites/default/files/css/css_VyKHcoC2vkE6vSZy1096yGnGRXchk2qXI7pn80r5cvw.css" media="all" />
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="/sites/default/files/css/css_24VwYIeQPnPJg9p4mvTlo-SPhof77pbbsMlbHgUmW90.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/sites/default/files/css/css_2THG1eGiBIizsWFeexsNe1iDifJ00QRS9uSd03rY9co.css" media="print" />
+
+<!--[if lte IE 7]>
+<link type="text/css" rel="stylesheet" href="/themes/bartik/css/ie.css?" media="all" />
+<![endif]-->
+
+<!--[if IE 6]>
+<link type="text/css" rel="stylesheet" href="/themes/bartik/css/ie6.css?" media="all" />
+<![endif]-->
+  <script type="text/javascript" src="/sites/default/files/js/js_Xjzh1hVfcgVAixhmmB6Go8TUMPOiprA-2vkC-oWXARQ.js"></script>
+<script type="text/javascript" src="/sites/default/files/js/js_CnVjeK75WybhZPt5LIjxPFFChsSvirFJZ4QJHLcK6Rw.js"></script>
+<script type="text/javascript" src="/sites/default/files/js/js_e8hHfTVXzJDYrSQ-AX71rxVEu2lHsePMOGYVVAFfhb8.js"></script>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?v=3&amp;language=en&amp;sensor=false&amp;libraries=geometry"></script>
+<script type="text/javascript" src="/sites/default/files/js/js_EK2HzqYcvwJN_3XfzpfqmLOmrehDWQQ50tCdugGvUbM.js"></script>
+<script type="text/javascript" src="/sites/default/files/js/gmap_markers.js"></script>
+<script type="text/javascript" src="/sites/default/files/js/js__1DMipMcK5q7kQ59L9oD0bENBoxYuCYwMRGUdNJ-IEs.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"bartik","theme_token":"-_GU7BnV93Uq8XzUsINyzMVQYJiuRq8GeOSwwpAZNe8","js":{"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/libraries\/colorbox\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/modules\/media_gallery\/colorbox-display.js":1,"sites\/all\/modules\/gmap\/js\/gmap.js":1,"http:\/\/maps.googleapis.com\/maps\/api\/js?v=3\u0026language=en\u0026sensor=false\u0026libraries=geometry":1,"sites\/all\/modules\/gmap\/js\/icon.js":1,"sites\/all\/modules\/gmap\/js\/marker.js":1,"sites\/all\/modules\/gmap\/js\/highlight.js":1,"sites\/all\/modules\/gmap\/js\/poly.js":1,"\/sites\/default\/files\/js\/gmap_markers.js":1,"sites\/all\/modules\/gmap\/js\/markerloader_static.js":1,"sites\/all\/modules\/gmap\/js\/gmap_marker.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/libraries\/colorbox\/example1\/colorbox.css":1,"sites\/all\/modules\/calendar\/css\/calendar_multiday.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/gmap\/gmap.css":1,"sites\/all\/modules\/media_gallery\/media_gallery.css":1,"sites\/all\/modules\/media_gallery\/media_gallery.ie7.css":1,"themes\/bartik\/css\/layout.css":1,"themes\/bartik\/css\/style.css":1,"themes\/bartik\/css\/colors.css":1,"themes\/bartik\/css\/print.css":1,"themes\/bartik\/css\/ie.css":1,"themes\/bartik\/css\/ie6.css":1}},"gmap":{"auto1map":{"width":"100%","height":"200px","zoom":3,"maxzoom":"14","controltype":"Small","pancontrol":1,"streetviewcontrol":0,"align":"None","maptype":"Map","mtc":"none","baselayers":{"Map":1,"Satellite":1,"Hybrid":1},"styles":{"line_default":["0000ff","5","45","",""],"poly_default":["000000","3","25","ff0000","45"],"highlight_color":"ff0000"},"line_colors":["#00cc00","#ff0000","#0000ff"],"behavior":{"locpick":false,"nodrag":0,"nokeyboard":1,"nomousezoom":1,"nocontzoom":0,"autozoom":true,"dynmarkers":0,"overview":0,"collapsehack":0,"scale":0,"extramarkerevents":false,"clickableshapes":false,"googlebar":0,"highlight":0},"markermode":"0","id":"auto1map","latitude":"37.779190","longitude":"-122.419140","markers":[{"latitude":"37.779190","longitude":"-122.419140","markername":"green","offset":0,"opts":{"title":"San Francisco City Hall"}}]}}});
+//--><!]]>
+</script>
+</head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-48 node-type-assembly triptych" >
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+    <div id="page-wrapper"><div id="page">
+
+  <div id="header" class="without-secondary-menu"><div class="section clearfix">
+
+    
+          <div id="name-and-slogan">
+
+                              <div id="site-name">
+              <strong>
+                <a href="/" title="Home" rel="home"><span>OpESR</span></a>
+              </strong>
+            </div>
+                  
+                  <div id="site-slogan">
+            Operation Empire State Rebellion          </div>
+        
+      </div> <!-- /#name-and-slogan -->
+    
+    
+          <div id="main-menu" class="navigation">
+        <h2 class="element-invisible">Main menu</h2><ul id="main-menu-links" class="links clearfix"><li class="menu-227 first"><a href="/">Home</a></li>
+<li class="menu-434"><a href="/about" title="About OpESR">About</a></li>
+<li class="menu-656"><a href="/gallery-collections/galleries" title="">Galleries</a></li>
+<li class="menu-432 last"><a href="/location/map" title="Assembly Map">Map</a></li>
+</ul>      </div> <!-- /#main-menu -->
+    
+    
+  </div></div> <!-- /.section, /#header -->
+
+  
+  
+  <div id="main-wrapper" class="clearfix"><div id="main" class="clearfix">
+
+          <div id="breadcrumb"><h2 class="element-invisible">You are here</h2><div class="breadcrumb"><a href="/">Home</a></div></div>
+    
+    
+    <div id="content" class="column"><div class="section">
+            <a id="main-content"></a>
+                    <h1 class="title" id="page-title">
+          SF Medical Marijuana Rally        </h1>
+                          <div class="tabs">
+                  </div>
+                          <div class="region region-content">
+    <div id="block-gmap-location-0" class="block block-gmap-location">
+
+    <h2>Location</h2>
+  
+  <div class="content">
+    <div style="width: 100%; height: 200px;" id="gmap-auto1map-gmap0" class="gmap-control gmap-gmap gmap gmap-map gmap-auto1map-gmap"><noscript>Javascript is required to view this map.</noscript></div>  </div>
+</div>
+<div id="block-system-main" class="block block-system">
+
+    
+  <div class="content">
+    <div id="node-48" class="node node-assembly node-promoted node-full clearfix" about="/assembly/sf-medical-marijuana-rally" typeof="sioc:Item foaf:Document">
+
+      <span property="dc:title" content="SF Medical Marijuana Rally" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="3" datatype="xsd:integer" class="rdf-meta element-hidden"></span>
+      <div class="meta submitted">
+        <div class="user-picture">
+    <img typeof="foaf:Image" src="/sites/default/files/styles/thumbnail/public/pictures/picture-1-1318234380.jpg" alt="OpESR&#039;s picture" title="OpESR&#039;s picture" />  </div>
+      <span property="dc:date dc:created" content="2012-04-02T12:29:46-05:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" about="/users/opesr" typeof="sioc:UserAccount" property="foaf:name" datatype="">OpESR</span> on Mon, 2012-04-02 12:29</span>    </div>
+  
+  <div class="content clearfix">
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"> <p><em>Come one, come all! Friends &amp; supporters are urged to join us at the BAY AREA UNITY MEDICAL CANNABIS RALLY</em><br /><strong>Tues, April 3rd  - SF City Hall 11 AM - Polk St. Entrance</strong><br />
+Followed by Noon March to the U.S Attorney's office at Federal Bldg, 450 Golden  Gate</p>
+<ul><li>Protest Federal Attacks on Medical Cannabis in California</li>
+<li>Answer US Attorneys’ Statewide Closures of Medical Cannabis Dispensaries...</li>
+<li>Senseless, Irrational US Department of Justice Civil Rights Violations Must End!</li>
+<li>San Francisco — Protect our Patients, Dispensaries and Values!!</li>
+</ul><p>Guest Speakers:   Members of SF Board of Supervisors, representatives from SF DA's office, City Attorney, Assemblyman Ammiano, Senator Leno, Betty Yee (CA Board of Equalization)<br />
++ MCD Operators, Patients, Cal NORML, ASA<br /><strong>If you can only make one rally, let this be the one!</strong></p>
+<p><a href="http://norml.net/attached/SFRALLYDivTree.pdf">SF Rally Poster</a></p>
+ </div></div></div><div class="field field-name-field-date field-type-datetime field-label-inline clearfix"><div class="field-label">Date:&nbsp;</div><div class="field-items"><div class="field-item even"><span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2012-04-03T16:00:00-07:00">Tue, 2012-04-03 16:00</span></div></div></div>  <div class="location-locations-display">
+    <h3 class="location-locations-header">Location</h3>
+
+    <div class="location-locations-wrapper">
+              <div class="location vcard" itemscope itemtype="http://schema.org/PostalAddress">
+  <div class="adr">
+          <span class="fn" itemprop="name">San Francisco City Hall</span>
+                  <span class="postal-code" itemprop="postalCode">94102</span>
+              <span class="locality" itemprop="addressLocality">
+      San Francisco      </span>
+              ,                     <span class="region" itemprop="addressRegion">CA</span>
+              <div class="country-name" itemprop="addressCountry">United States</div>
+                                            <span class="geo"><abbr class="latitude" title="37.779190">37° 46' 45.084" N</abbr>, <abbr
+            class="longitude" title="-122.419140">122° 25' 8.904" W</abbr></span>
+            </div>
+      <div class="map-link">
+      <div class="location map-link">See map: <a href="http://maps.google.com?q=37.779190+-122.419140+%28%2C+San+Francisco%2C+CA%2C+94102%2C+us%29" target="_blank">Google Maps</a></div>    </div>
+  </div>
+  <div class="location-hidden">
+        California        US      </div>
+          </div>
+  </div>
+<div class="field field-name-field-email field-type-email field-label-inline clearfix"><div class="field-label">Email:&nbsp;</div><div class="field-items"><div class="field-item even"><a href="mailto:canorml@canorml.org">canorml@canorml.org</a></div></div></div><div class="field field-name-field-tags field-type-taxonomy-term-reference field-label-hidden clearfix"><ul class="links"><li class="taxonomy-term-reference-0"><a href="/tags/opesr" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">OpESR</a></li><li class="taxonomy-term-reference-1"><a href="/tags/mmj" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">MMJ</a></li></ul></div>  </div>
+
+      <div class="link-wrapper">
+      <ul class="links inline"><li class="comment_forbidden first"><span><a href="/user/login?destination=node/48%23comment-form">Log in</a> to post comments</span></li>
+<li class="tweet_Twitter last"><a href="http://twitter.com/?status=SF%20Medical%20Marijuana%20Rally%20%23MMJ%20%23OpESR%20http%3A//live-opesr.pantheonsite.io/assembly/sf-medical-marijuana-rally%20via%20%40Op_ESR" class="tweet" rel="nofollow" target="_blank"><img typeof="foaf:Image" src="/sites/all/modules/tweet/twitter.png" alt="Post to Twitter" title="Post to Twitter" /> Post to Twitter</a></li>
+</ul>    </div>
+  
+  <div id="comments" class="comment-wrapper">
+          <h2 class="title">Comments</h2>
+      
+  <a id="comment-53"></a>
+<div class="comment comment-by-node-author clearfix" about="/comment/53#comment-53" typeof="sioc:Post sioct:Comment">
+
+  <div class="attribution">
+
+      <div class="user-picture">
+    <img typeof="foaf:Image" src="/sites/default/files/styles/thumbnail/public/pictures/picture-1-1318234380.jpg" alt="OpESR&#039;s picture" title="OpESR&#039;s picture" />  </div>
+
+    <div class="submitted">
+      <p class="commenter-name">
+        <span rel="sioc:has_creator"><span class="username" xml:lang="" about="/users/opesr" typeof="sioc:UserAccount" property="foaf:name" datatype="">OpESR</span></span>      </p>
+      <p class="comment-time">
+        <span property="dc:date dc:created" content="2012-04-02T12:34:45-05:00" datatype="xsd:dateTime">Mon, 2012-04-02 12:34</span>      </p>
+      <p class="comment-permalink">
+        <a href="/comment/53#comment-53" class="permalink" rel="bookmark">Permalink</a>      </p>
+    </div>
+  </div>
+
+  <div class="comment-text">
+    <div class="comment-arrow"></div>
+
+    
+        <h3 property="dc:title" datatype=""><a href="/comment/53#comment-53" class="permalink" rel="bookmark">Feds raid downtown Oakland pot university</a></h3>
+    
+    <div class="content">
+      <span rel="sioc:reply_of" resource="/assembly/sf-medical-marijuana-rally" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"> <p> </p>
+<p style="color: rgb(0, 0, 0); font-family: Times; font-size: 13px; line-height: normal; text-align: left; "><strong>(04-02) 08:13 PDT OAKLAND</strong> -- Federal agents swooped in Monday morning to search Oakland's Oaksterdam <a href="http://www.sfgate.com/education-guide/">University</a> in Oakland, the state's first cannabis industry training school.</p>
+<p style="color: rgb(0, 0, 0); font-family: Times; font-size: 13px; line-height: normal; text-align: left; ">Agents with the U.S. Marshals Service, the Drug Enforcement Administration and the Internal Revenue Service's criminal investigation division are searching the university at the corner of 16th Street and Broadway, in the heart of the city's widely recognized downtown cannabis-oriented district, authorities said.</p>
+<p style="color: rgb(0, 0, 0); font-family: Times; font-size: 13px; line-height: normal; text-align: left; ">The university has been cordoned off by yellow caution tape.</p>
+<p style="color: rgb(0, 0, 0); font-family: Times; font-size: 13px; line-height: normal; text-align: left; ">Arlette Lee, an IRS spokeswoman, said she could not say why the agents were there other than to confirm that they were serving a federal search warrant.</p>
+<p style="color: rgb(0, 0, 0); font-family: Times; font-size: 13px; line-height: normal; text-align: left; ">"Everything's under seal," Lee said, referring to the search warrant and documents relating to the investigation. "We're not able to comment as far as the nature of this ongoing investigation."</p>
+<p style="color: rgb(0, 0, 0); font-family: Times; font-size: 13px; line-height: normal; text-align: left; ">The federal agencies are conducting a joint investigation, she said.</p>
+<p style="color: rgb(0, 0, 0); font-family: Times; font-size: 13px; line-height: normal; text-align: left; ">The raid comes fewer than three weeks after Oakland city officials issued preliminary approvals for four new medical marijuana dispensaries, even as federal prosecutors exerted increased pressure on medical cannabis dispensaries, forcing hundreds to close.</p>
+<p style="color: rgb(0, 0, 0); font-family: Times; font-size: 13px; line-height: normal; text-align: left; ">Federal officials say they are concerned about dispensaries that are getting too big or too close to parks or schools. They have long asserted that federal law trumps the state's 1996 voter-approved law legalizing medical cannabis.</p>
+<p><span style="color: rgb(0, 0, 0); font-family: Times; font-size: 13px; line-height: normal; text-align: left; ">Read more: <a href="http://www.sfgate.com/cgi-bin/article.cgi?f=/c/a/2012/04/02/BABJ1NTK9T.DTL#ixzz1quClZsuG" style="color: rgb(0, 51, 153); ">http://www.sfgate.com/cgi-bin/article.cgi?f=/c/a/2012/04/02/BABJ1NTK9T.DTL#ixzz1quClZsuG</a></span></p>
+<p> </p>
+ </div></div></div>          </div> <!-- /.content -->
+
+    <ul class="links inline"><li class="comment_forbidden first last"><span><a href="/user/login?destination=node/48%23comment-form">Log in</a> to post comments</span></li>
+</ul>  </div> <!-- /.comment-text -->
+</div>
+<a id="comment-54"></a>
+<div class="comment comment-by-node-author clearfix" about="/comment/54#comment-54" typeof="sioc:Post sioct:Comment">
+
+  <div class="attribution">
+
+      <div class="user-picture">
+    <img typeof="foaf:Image" src="/sites/default/files/styles/thumbnail/public/pictures/picture-1-1318234380.jpg" alt="OpESR&#039;s picture" title="OpESR&#039;s picture" />  </div>
+
+    <div class="submitted">
+      <p class="commenter-name">
+        <span rel="sioc:has_creator"><span class="username" xml:lang="" about="/users/opesr" typeof="sioc:UserAccount" property="foaf:name" datatype="">OpESR</span></span>      </p>
+      <p class="comment-time">
+        <span property="dc:date dc:created" content="2012-04-02T17:31:17-05:00" datatype="xsd:dateTime">Mon, 2012-04-02 17:31</span>      </p>
+      <p class="comment-permalink">
+        <a href="/comment/54#comment-54" class="permalink" rel="bookmark">Permalink</a>      </p>
+    </div>
+  </div>
+
+  <div class="comment-text">
+    <div class="comment-arrow"></div>
+
+    
+        <h3 property="dc:title" datatype=""><a href="/comment/54#comment-54" class="permalink" rel="bookmark">Lawmakers In 5 States Tell Feds To Back Off Medical Marijuana</a></h3>
+    
+    <div class="content">
+      <span rel="sioc:reply_of" resource="/assembly/sf-medical-marijuana-rally" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"> <p> </p>
+<p style="list-style-type: none; list-style-position: initial; list-style-image: initial; margin-bottom: 15px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; border-image: initial; color: rgb(51, 51, 51); font-size: 15px; font-family: Georgia, Century, Times, serif; text-align: left; background-color: rgb(255, 255, 255); ">WASHINGTON -- Elected lawmakers in five states have a message for the federal government: Don't interfere with state medical marijuana laws.</p>
+<p style="list-style-type: none; list-style-position: initial; list-style-image: initial; margin-bottom: 15px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; border-image: initial; color: rgb(51, 51, 51); font-size: 15px; font-family: Georgia, Century, Times, serif; text-align: left; background-color: rgb(255, 255, 255); ">In an open letter to the federal government, lawmakers from both sides of the political aisle called on the government to stop using scarce law enforcement resources on taking pot away from medical marijuana patients.</p>
+<p style="list-style-type: none; list-style-position: initial; list-style-image: initial; margin-bottom: 15px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; border-image: initial; color: rgb(51, 51, 51); font-size: 15px; font-family: Georgia, Century, Times, serif; text-align: left; background-color: rgb(255, 255, 255); ">"States with medical marijuana laws have chosen to embrace an approach that is based on science, reason, and compassion. We are lawmakers from these states," the lawmakers explained in their letter.</p>
+<p style="list-style-type: none; list-style-position: initial; list-style-image: initial; margin-bottom: 15px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; border-image: initial; color: rgb(51, 51, 51); font-size: 15px; font-family: Georgia, Century, Times, serif; text-align: left; background-color: rgb(255, 255, 255); ">"Our state medical marijuana laws differ from one another in their details, such as which patients qualify for medical use; how much marijuana patients may possess; whether patients and caregivers may grow marijuana; and whether regulated entities may grow and sell marijuana to patients. Each of our laws, however, is motivated by a desire to protect seriously ill patients from criminal penalties under state law."</p>
+<p style="list-style-type: none; list-style-position: initial; list-style-image: initial; margin-bottom: 15px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; border-image: initial; color: rgb(51, 51, 51); font-size: 15px; font-family: Georgia, Century, Times, serif; text-align: left; background-color: rgb(255, 255, 255); ">The letter -- signed by Assemblyman Tom Ammiano (D-Calif.), Sen. Jeanne Kohl-Welles (D-Wash.), Rep. Antonio Maestas (D-N.M.), Sen. Cisco McSorley (D-N.M.), Assemblyman Chris Norby (R-Calif.), Rep. Deborah Sanderson (R-Maine) and Sen. Pat Steadman (D-Colo.) -- comes directly on the heels of <a href="http://www.huffingtonpost.com/2012/04/02/oaksterdam-university-raid_n_1397255.html" style="list-style-type: none; list-style-position: initial; list-style-image: initial; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; border-image: initial; color: rgb(0, 136, 195); outline-style: none; outline-width: initial; outline-color: initial; " target="_hplink">a federal raid</a> in the heart of California's pot legalization movement: medical marijuana training school Oaksterdam University in downtown Oakland, where U.S. Drug Enforcement Administration officials on Monday blocked off doors with yellow tape and carried off trash bags full of unknown substances to a nearby van. An IRS spokeswoman could not comment on the raid except to say the agents had a federal search warrant.</p>
+<p style="list-style-type: none; list-style-position: initial; list-style-image: initial; margin-bottom: 15px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; border-image: initial; color: rgb(51, 51, 51); font-size: 15px; font-family: Georgia, Century, Times, serif; text-align: left; background-color: rgb(255, 255, 255); ">The lawmakers called on President Obama to live up to his campaign promise to leave the regulation of medical marijuana to the states, adding raids would only "force patients underground" into the illegal drug market.</p>
+<p style="list-style-type: none; list-style-position: initial; list-style-image: initial; margin-bottom: 15px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; border-image: initial; color: rgb(51, 51, 51); font-size: 15px; font-family: Georgia, Century, Times, serif; text-align: left; background-color: rgb(255, 255, 255); ">The president as a candidate promised to maintain a hands-off approach toward pot clinics that adhere to state law. At a 2007 town hall meeting in Manchester, N.H., Obama said raiding patients who use marijuana for medicinal purposes "makes no sense." At another town hall in Nashua, N.H., he said the Justice Department's prosecution of medical marijuana users was "not a good use of our resources." Yet the number of Justice Department raids on marijuana dispensaries has continued to rise.</p>
+<p style="list-style-type: none; list-style-position: initial; list-style-image: initial; margin-bottom: 15px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; border-image: initial; color: rgb(51, 51, 51); font-size: 15px; font-family: Georgia, Century, Times, serif; text-align: left; background-color: rgb(255, 255, 255); ">Read the full letter here:</p>
+<blockquote style="list-style-type: none; list-style-position: initial; list-style-image: initial; margin-top: 15px; margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding-top: 15px; padding-right: 15px; padding-bottom: 15px; padding-left: 15px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-width: initial; border-color: initial; border-image: initial; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-top-color: rgb(204, 204, 204); border-right-color: rgb(204, 204, 204); border-bottom-color: rgb(204, 204, 204); border-left-color: rgb(204, 204, 204); font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-style: normal; background-color: rgb(240, 240, 240); color: rgb(34, 34, 34); text-align: left; "><p>Over the last two decades, 16 states and the District of Columbia have chosen to depart from federal policy and chart their own course on the issue of medical marijuana, as states are entitled to do under our federalist system of government. These states have rejected the fallacy long promoted by the federal government -- that marijuana has absolutely no accepted medical use and that seriously ill people must choose between ignoring their doctors' medical advice or risking arrest and prosecution. They have stopped using their scarce law enforcement resources to punish patients and those who care for them and have instead spent considerable resources and time crafting programs that will provide patients with safe and regulated access to medical marijuana.<br /></p><p style="list-style-type: none; list-style-position: initial; list-style-image: initial; margin-top: 8px; margin-bottom: 15px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; border-image: initial; ">States with medical marijuana laws have chosen to embrace an approach that is based on science, reason, and compassion. We are lawmakers from these states.</p>
+<p style="list-style-type: none; list-style-position: initial; list-style-image: initial; margin-top: 8px; margin-bottom: 15px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; border-image: initial; ">Our state medical marijuana laws differ from one another in their details, such as which patients qualify for medical use; how much marijuana patients may possess; whether patients and caregivers may grow marijuana; and whether regulated entities may grow and sell marijuana to patients. Each of our laws, however, is motivated by a desire to protect seriously ill patients from criminal penalties under state law; to provide a safe and reliable source of medical marijuana; and to balance and protect the needs of local communities and other residents in the state. The laws were drafted with considered thoughtfulness and care, and are thoroughly consistent with the American tradition of using the states as laboratories for public policy innovation and experimentation.</p>
+<p style="list-style-type: none; list-style-position: initial; list-style-image: initial; margin-top: 8px; margin-bottom: 15px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; border-image: initial; ">Unfortunately, these laws face a mounting level of federal hostility and confusing mixed messages from the Obama Administration, the Department of Justice, and the various United States Attorneys. In 2008, then candidate Obama stated that as President, he would not use the federal government to circumvent state laws on the issue of medical marijuana. This promise was followed up in 2009 by President Obama with a Department of Justice memo from former Deputy Attorney General David W. Ogden stating that federal resources should not generally be focused "on individuals whose actions are in clear and unambiguous compliance with existing state laws providing for the medical use of marijuana." This provided welcome guidance for state legislators and administrators and encouraged us to move forward with drafting and passing responsible regulatory legislation.</p>
+<p style="list-style-type: none; list-style-position: initial; list-style-image: initial; margin-top: 8px; margin-bottom: 15px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; border-image: initial; ">Nonetheless, the United States Attorneys in several states with medical marijuana laws have chosen a different course. They have explicitly threatened that federal investigative and prosecutorial resources "will continue to be directed" towards the manufacture and distribution of medical marijuana, even if such activities are permitted under state law. These threats have generally been timed to influence pending legislation or encourage the abandonment of state and local regulatory programs. They contradict President Obama's campaign promise and policy his first year in office and serve to push medical marijuana activity back into the illicit market.</p>
+<p style="list-style-type: none; list-style-position: initial; list-style-image: initial; margin-top: 8px; margin-bottom: 15px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; border-image: initial; ">Most disturbing is that a few United States Attorneys warn that state employees who implement the laws and regulations of our states are not immune from criminal prosecution under the federal Controlled Substances Act. They do so notwithstanding the fact that no provision exists within the Controlled Substances Act that makes it a crime for a state employee to enforce regulations that help a state define conduct that is legal under its own state laws.</p>
+<p style="list-style-type: none; list-style-position: initial; list-style-image: initial; margin-top: 8px; margin-bottom: 15px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; border-image: initial; ">Hundreds of state and municipal employees are currently involved in the licensing and regulation of medical marijuana producers and providers in New Mexico, Colorado, Maine, and California, and have been for years. The federal government has never threatened, much less prosecuted, any of these employees. Indeed, the federal government has not, to our knowledge, prosecuted state employees for performing their ministerial duties under state law in modern history. It defies logic and precedent that the federal government would start prosecuting state employees now.</p>
+<p style="list-style-type: none; list-style-position: initial; list-style-image: initial; margin-top: 8px; margin-bottom: 15px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; border-image: initial; ">Recognizing the lack of any real harm to state employees, a number of states have moved forward. New Jersey Governor Chris Christie drew on his own experience as a former United States Attorney in deciding that New Jersey state workers were not realistically at risk of federal prosecution in his decision to move forward implementing New Jersey’s medical marijuana program. Rhode Island, Vermont, Arizona, and the District of Columbia are also in the process of implementing their state laws.</p>
+<p style="list-style-type: none; list-style-position: initial; list-style-image: initial; margin-top: 8px; margin-bottom: 15px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; border-image: initial; ">Nonetheless, the suggestion that state employees are at risk is have a destructive and chilling impact. Washington Governor Christine Gregoire vetoed legislation to regulate medical marijuana in her state and Delaware Governor Jack Markell suspended implementation of his state's regulatory program after receiving warnings from the United States Attorneys in their states about state employees. Additionally, a number of localities in California ended or suspended regulatory programs after receiving similar threats to their workers.</p>
+<p style="list-style-type: none; list-style-position: initial; list-style-image: initial; margin-top: 8px; margin-bottom: 15px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; border-image: initial; ">We, the undersigned state legislators, call on state and local officials to not be intimidated by these empty federal threats. Our state medical marijuana programs should be implemented and move forward. Our work, and the will of our voters, should see the light of day.</p>
+<p style="list-style-type: none; list-style-position: initial; list-style-image: initial; margin-top: 8px; margin-bottom: 15px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; border-image: initial; ">We call on the federal government not to interfere with our ability to control and regulate how medical marijuana is grown and distributed. Let us seek clarity rather than chaos. Don’t force patients underground, to fuel the illegal drug market.</p>
+<p style="list-style-type: none; list-style-position: initial; list-style-image: initial; margin-top: 8px; margin-bottom: 15px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; border-image: initial; ">And finally, we call on President Obama to recommit to the principles and policy on which he campaigned and asserted his first year in office. Please respect our state laws. And don't use our employees as pawns in your zealous and misguided war on medical marijuana.</p>
+<p style="list-style-type: none; list-style-position: initial; list-style-image: initial; margin-top: 8px; margin-bottom: 15px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; border-image: initial; ">Assemblymember Tom Ammiano (D-CA)</p>
+<p style="list-style-type: none; list-style-position: initial; list-style-image: initial; margin-top: 8px; margin-bottom: 15px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; border-image: initial; ">Senator Jeanne Kohl-Welles (D-WA)</p>
+<p style="list-style-type: none; list-style-position: initial; list-style-image: initial; margin-top: 8px; margin-bottom: 15px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; border-image: initial; ">Representative Antonio Maestas (D-NM)</p>
+<p style="list-style-type: none; list-style-position: initial; list-style-image: initial; margin-top: 8px; margin-bottom: 15px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; border-image: initial; ">Senator Cisco McSorley (D-NM)</p>
+<p style="list-style-type: none; list-style-position: initial; list-style-image: initial; margin-top: 8px; margin-bottom: 15px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; border-image: initial; ">Assemblymember Chris Norby (R-CA)</p>
+<p style="list-style-type: none; list-style-position: initial; list-style-image: initial; margin-top: 8px; margin-bottom: 15px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; border-image: initial; ">Representative Deborah Sanderson (R-ME)</p>
+<p style="list-style-type: none; list-style-position: initial; list-style-image: initial; margin-top: 8px; margin-bottom: 15px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; border-image: initial; ">Senator Pat Steadman (D-CO)</p>
+<div> </div>
+</blockquote>
+<p style="list-style-type: none; list-style-position: initial; list-style-image: initial; margin-bottom: 15px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; border-image: initial; color: rgb(51, 51, 51); font-size: 15px; font-family: Georgia, Century, Times, serif; text-align: left; background-color: rgb(255, 255, 255); "><a href="http://www.huffingtonpost.com/2012/04/02/lawmakers-in-5-states-tell-feds-medical-marijuana_n_1397811.html">http://www.huffingtonpost.com/2012/04/02/lawmakers-in-5-states-tell-feds-medical-marijuana_n_1397811.html</a></p>
+ </div></div></div>          </div> <!-- /.content -->
+
+    <ul class="links inline"><li class="comment_forbidden first last"><span><a href="/user/login?destination=node/48%23comment-form">Log in</a> to post comments</span></li>
+</ul>  </div> <!-- /.comment-text -->
+</div>
+<a id="comment-55"></a>
+<div class="comment comment-by-node-author clearfix" about="/comment/55#comment-55" typeof="sioc:Post sioct:Comment">
+
+  <div class="attribution">
+
+      <div class="user-picture">
+    <img typeof="foaf:Image" src="/sites/default/files/styles/thumbnail/public/pictures/picture-1-1318234380.jpg" alt="OpESR&#039;s picture" title="OpESR&#039;s picture" />  </div>
+
+    <div class="submitted">
+      <p class="commenter-name">
+        <span rel="sioc:has_creator"><span class="username" xml:lang="" about="/users/opesr" typeof="sioc:UserAccount" property="foaf:name" datatype="">OpESR</span></span>      </p>
+      <p class="comment-time">
+        <span property="dc:date dc:created" content="2012-04-03T14:33:00-05:00" datatype="xsd:dateTime">Tue, 2012-04-03 14:33</span>      </p>
+      <p class="comment-permalink">
+        <a href="/comment/55#comment-55" class="permalink" rel="bookmark">Permalink</a>      </p>
+    </div>
+  </div>
+
+  <div class="comment-text">
+    <div class="comment-arrow"></div>
+
+    
+        <h3 property="dc:title" datatype=""><a href="/comment/55#comment-55" class="permalink" rel="bookmark">NCAL: DEA Raids Oaksterdam - Protest Tues 4/3 in SF</a></h3>
+    
+    <div class="content">
+      <span rel="sioc:reply_of" resource="/assembly/sf-medical-marijuana-rally" class="rdf-meta element-hidden"></span><div class="field field-name-comment-body field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>OAKSTERDAM RAIDED - PROTEST FEDERAL RAIDS APRIL 3rd in San Francisco  </p>
+<p>Medical marijuana supporters will be rallying to protest the federal attack on California&#039;s cannabis collectives tomorrow April 3rd at San Francisco City Hall (Polk St), 11am - 1 pm, with a march to the US Federal Building (450 Golden Gate).</p>
+<p><a href="http://www.canorml.org/SFUnited.pdf">http://www.canorml.org/SFUnited.pdf</a>  </p>
+<p>OAKLAND, Apr 2nd - Agents of the DEA, IRS and Federal Marshall&#039;s office converged on Oaksterdam to raid Richard Lee&#039;s Oaksterdam University, the Oaksterdam Museum, the Blue Sky Coffee Shop, the Oaksterdam Gift Shop and other locations, including Lee&#039;s apartment. Lee was detained but not arrested. </p>
+<p>Lee, a prominent advocate of marijuana legalization, co-sponsored Oakland&#039;s 2004 &quot;tax and regulate&quot; initiative, Measure Z, which won 65% of the vote, and was the primary sponsor of California&#039;s 2010 Prop 19 legalization initiative.  </p>
+<p>Scores of angry protesters shouted &quot;Shame&quot; and &quot;DEA go away&quot; as agents carried off evidence, including copious marijuana plants, from the scene. Lee&#039;s Blue Sky Coffee Shop is one of four licensed collectives operating under Oakland&#039;s pioneering dispensary ordinance, the first in the nation.  </p>
+<p>Cal NORML director Dale Gieringer denounced today&#039;s raid as &quot;bankrupt drug police state thuggery.&quot;  </p>
+<p>Oakland police were needed to control the crowd, which spilled out into the middle of Broadway. (Meanwhile, as federal agents were causing trouble in Oaksterdam, more Oakland police were called in to respond to a fatal school shoot-out that left seven dead elsewhere in the city). A couple of protesters were arrested for interfering with federal agents, including Danielle Schumacher, who tried to block an IRS car, and Jose Gutierrez, who was shoved and beaten by DEA agents forcing their way through the crowd. </p>
+<p>Oakland city council member Rebecca Kaplan and Alameda County Supervisor Nate Miley denounced the raids. In a written statement, Miley declared, &quot;I am really shocked and saddened by the actions of the federal government in targeting Oaksterdam and Richard Lee in their efforts to help individuals who are in need of medical cannabis as well as educating their caregivers. It’s unfortunate that the federal government has chosen to ignore their own policies that were issued by the US Attorney General not to interfere with states that have enacted laws regulating medical marijuana.&quot;  </p>
+<p>California NORML urges supporters to protest to President Obama about failing to honor his campaign pledge to respect state medical marijuana laws: To contact the President, visit:  <a href="http://canorml.org/obama">http://canorml.org/obama</a> .</p>
+</div></div></div>          </div> <!-- /.content -->
+
+    <ul class="links inline"><li class="comment_forbidden first last"><span><a href="/user/login?destination=node/48%23comment-form">Log in</a> to post comments</span></li>
+</ul>  </div> <!-- /.comment-text -->
+</div>
+
+  </div>
+
+</div>
+  </div>
+</div>
+  </div>
+      
+    </div></div> <!-- /.section, /#content -->
+
+    
+  </div></div> <!-- /#main, /#main-wrapper -->
+
+      <div id="triptych-wrapper"><div id="triptych" class="clearfix">
+        <div class="region region-triptych-first">
+    <div id="block-media-gallery-7" class="block block-media-gallery">
+
+    <h2>OpESR</h2>
+  
+  <div class="content">
+    <div id="node-7" class="node node-media-gallery clearfix" about="/gallery/opesr" typeof="sioc:Item foaf:Document">
+
+        <h2>
+      <a href="/gallery/opesr"></a>
+    </h2>
+    <span property="dc:title" content="OpESR" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>
+  
+  <div class="content clearfix">
+    <div class="field field-name-media-gallery-media field-type-media field-label-hidden clearfix media-gallery-media mg-col mg-col-2"><div class="field-items"><div class="field-item even" id="media-gallery-media-0"><div class="media-gallery-item-wrapper"><div class="media-gallery-item"><div class="top"><div class="top-inset-1"><div class="top-inset-2"></div></div></div><div class="gallery-thumb-outer"><div class="gallery-thumb-inner"><a href="/media-gallery/detail/7/80" class="media-gallery-thumb cbEnabled"><img typeof="foaf:Image" src="/sites/default/files/styles/media_gallery_thumbnail/public/media-youtube/RCX8RBGZSTg.jpg" width="450" height="450" alt="Anonymous - The Bankers Are The Problem" /></a></div></div><div class="bottom"><div class="bottom-inset-1"><div class="bottom-inset-2"></div></div></div></div></div></div><div class="field-item odd" id="media-gallery-media-1"><div class="media-gallery-item-wrapper"><div class="media-gallery-item"><div class="top"><div class="top-inset-1"><div class="top-inset-2"></div></div></div><div class="gallery-thumb-outer"><div class="gallery-thumb-inner"><a href="/media-gallery/detail/7/24" class="media-gallery-thumb cbEnabled"><img typeof="foaf:Image" src="/sites/default/files/styles/media_gallery_thumbnail/public/media-youtube/sO3lnIC4bCE.jpg" width="450" height="450" alt="sO3lnIC4bCE" /></a></div></div><div class="bottom"><div class="bottom-inset-1"><div class="bottom-inset-2"></div></div></div></div></div></div><div class="field-item even" id="media-gallery-media-2"><div class="media-gallery-item-wrapper"><div class="media-gallery-item"><div class="top"><div class="top-inset-1"><div class="top-inset-2"></div></div></div><div class="gallery-thumb-outer"><div class="gallery-thumb-inner"><a href="/media-gallery/detail/7/23" class="media-gallery-thumb cbEnabled"><img typeof="foaf:Image" src="/sites/default/files/styles/media_gallery_thumbnail/public/media-youtube/CLzI3Qysa50.jpg" width="450" height="450" alt="CLzI3Qysa50" /></a></div></div><div class="bottom"><div class="bottom-inset-1"><div class="bottom-inset-2"></div></div></div></div></div></div><div class="field-item odd" id="media-gallery-media-3"><div class="media-gallery-item-wrapper"><div class="media-gallery-item"><div class="top"><div class="top-inset-1"><div class="top-inset-2"></div></div></div><div class="gallery-thumb-outer"><div class="gallery-thumb-inner"><a href="/media-gallery/detail/7/21" class="media-gallery-thumb cbEnabled"><img typeof="foaf:Image" src="/sites/default/files/styles/media_gallery_thumbnail/public/media-youtube/B7YnRzzGUpk.jpg" width="450" height="450" alt="B7YnRzzGUpk" /></a></div></div><div class="bottom"><div class="bottom-inset-1"><div class="bottom-inset-2"></div></div></div></div></div></div></div></div>  </div>
+
+  
+  
+</div>
+<div class="more-link"><a href="/gallery/opesr" title="Show the complete gallery">More</a></div>  </div>
+</div>
+  </div>
+        <div class="region region-triptych-middle">
+    <div id="block-media-gallery-9" class="block block-media-gallery">
+
+    <h2>Occupy</h2>
+  
+  <div class="content">
+    <div id="node-9" class="node node-media-gallery clearfix" about="/gallery/occupy" typeof="sioc:Item foaf:Document">
+
+        <h2>
+      <a href="/gallery/occupy"></a>
+    </h2>
+    <span property="dc:title" content="Occupy" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>
+  
+  <div class="content clearfix">
+    <div class="field field-name-media-gallery-media field-type-media field-label-hidden clearfix media-gallery-media mg-col mg-col-2"><div class="field-items"><div class="field-item even" id="media-gallery-media-0"><div class="media-gallery-item-wrapper"><div class="media-gallery-item"><div class="top"><div class="top-inset-1"><div class="top-inset-2"></div></div></div><div class="gallery-thumb-outer"><div class="gallery-thumb-inner"><a href="/media-gallery/detail/9/54" class="media-gallery-thumb cbEnabled"><img typeof="foaf:Image" src="/sites/default/files/styles/media_gallery_thumbnail/public/media-youtube/u49U_jzn6GQ.jpg" width="450" height="450" alt="u49U_jzn6GQ" /></a></div></div><div class="bottom"><div class="bottom-inset-1"><div class="bottom-inset-2"></div></div></div></div></div></div><div class="field-item odd" id="media-gallery-media-1"><div class="media-gallery-item-wrapper"><div class="media-gallery-item"><div class="top"><div class="top-inset-1"><div class="top-inset-2"></div></div></div><div class="gallery-thumb-outer"><div class="gallery-thumb-inner"><a href="/media-gallery/detail/9/34" class="media-gallery-thumb cbEnabled"><img typeof="foaf:Image" src="/sites/default/files/styles/media_gallery_thumbnail/public/media-youtube/Xb9mJsiDJ7k.jpg" width="450" height="450" alt="Xb9mJsiDJ7k" /></a></div></div><div class="bottom"><div class="bottom-inset-1"><div class="bottom-inset-2"></div></div></div></div></div></div><div class="field-item even" id="media-gallery-media-2"><div class="media-gallery-item-wrapper"><div class="media-gallery-item"><div class="top"><div class="top-inset-1"><div class="top-inset-2"></div></div></div><div class="gallery-thumb-outer"><div class="gallery-thumb-inner"><a href="/media-gallery/detail/9/35" class="media-gallery-thumb cbEnabled"><img typeof="foaf:Image" src="/sites/default/files/styles/media_gallery_thumbnail/public/media-youtube/mW_nDBKybVg.jpg" width="450" height="450" alt="mW_nDBKybVg" /></a></div></div><div class="bottom"><div class="bottom-inset-1"><div class="bottom-inset-2"></div></div></div></div></div></div><div class="field-item odd" id="media-gallery-media-3"><div class="media-gallery-item-wrapper"><div class="media-gallery-item"><div class="top"><div class="top-inset-1"><div class="top-inset-2"></div></div></div><div class="gallery-thumb-outer"><div class="gallery-thumb-inner"><a href="/media-gallery/detail/9/37" class="media-gallery-thumb cbEnabled"><img typeof="foaf:Image" src="/sites/default/files/styles/media_gallery_thumbnail/public/media-youtube/LhhTvK2etNs.jpg" width="450" height="450" alt="LhhTvK2etNs" /></a></div></div><div class="bottom"><div class="bottom-inset-1"><div class="bottom-inset-2"></div></div></div></div></div></div></div></div>  </div>
+
+  
+  
+</div>
+<div class="more-link"><a href="/gallery/occupy" title="Show the complete gallery">More</a></div>  </div>
+</div>
+  </div>
+        <div class="region region-triptych-last">
+    <div id="block-media-gallery-53" class="block block-media-gallery">
+
+    <h2>FTP</h2>
+  
+  <div class="content">
+    <div id="node-53" class="node node-media-gallery node-promoted clearfix" about="/gallery/ftp" typeof="sioc:Item foaf:Document">
+
+        <h2>
+      <a href="/gallery/ftp"></a>
+    </h2>
+    <span property="dc:title" content="FTP" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>
+  
+  <div class="content clearfix">
+    <div class="field field-name-media-gallery-media field-type-media field-label-hidden clearfix media-gallery-media mg-col mg-col-2"><div class="field-items"><div class="field-item even" id="media-gallery-media-0"><div class="media-gallery-item-wrapper"><div class="media-gallery-item"><div class="top"><div class="top-inset-1"><div class="top-inset-2"></div></div></div><div class="gallery-thumb-outer"><div class="gallery-thumb-inner"><a href="/media-gallery/detail/53/76" class="media-gallery-thumb cbEnabled"><img typeof="foaf:Image" src="/sites/default/files/styles/media_gallery_thumbnail/public/media-youtube/GksTJeB5J3E.jpg" width="450" height="450" alt="Folder 01, Det. Pierre (Broadway &amp; Cortland) VIDEO: M2U00011" /></a></div></div><div class="bottom"><div class="bottom-inset-1"><div class="bottom-inset-2"></div></div></div></div></div></div><div class="field-item odd" id="media-gallery-media-1"><div class="media-gallery-item-wrapper"><div class="media-gallery-item"><div class="top"><div class="top-inset-1"><div class="top-inset-2"></div></div></div><div class="gallery-thumb-outer"><div class="gallery-thumb-inner"><a href="/media-gallery/detail/53/75" class="media-gallery-thumb cbEnabled"><img typeof="foaf:Image" src="/sites/default/files/styles/media_gallery_thumbnail/public/media-youtube/Y3OCtfanNx4.jpg" width="450" height="450" alt="Folder 01, Det. Pierre (Broadway &amp; Cortland) VIDEO: M2U00012" /></a></div></div><div class="bottom"><div class="bottom-inset-1"><div class="bottom-inset-2"></div></div></div></div></div></div><div class="field-item even" id="media-gallery-media-2"><div class="media-gallery-item-wrapper"><div class="media-gallery-item"><div class="top"><div class="top-inset-1"><div class="top-inset-2"></div></div></div><div class="gallery-thumb-outer"><div class="gallery-thumb-inner"><a href="/media-gallery/detail/53/74" class="media-gallery-thumb cbEnabled"><img typeof="foaf:Image" src="/sites/default/files/styles/media_gallery_thumbnail/public/media-youtube/i2lUKOV-qA0.jpg" width="450" height="450" alt="Folder 09, P.O. Telese 1 of 2 (Park Eviction): VIDEO: M2U00010" /></a></div></div><div class="bottom"><div class="bottom-inset-1"><div class="bottom-inset-2"></div></div></div></div></div></div><div class="field-item odd" id="media-gallery-media-3"><div class="media-gallery-item-wrapper"><div class="media-gallery-item"><div class="top"><div class="top-inset-1"><div class="top-inset-2"></div></div></div><div class="gallery-thumb-outer"><div class="gallery-thumb-inner"><a href="/media-gallery/detail/53/73" class="media-gallery-thumb cbEnabled"><img typeof="foaf:Image" src="/sites/default/files/styles/media_gallery_thumbnail/public/media-youtube/fTRKS_cQ_gk.jpg" width="450" height="450" alt="Folder 09, P.O. Telese 1 of 2 (Park Eviction): VIDEO: 20111115010652" /></a></div></div><div class="bottom"><div class="bottom-inset-1"><div class="bottom-inset-2"></div></div></div></div></div></div></div></div>  </div>
+
+  
+  
+</div>
+<div class="more-link"><a href="/gallery/ftp" title="Show the complete gallery">More</a></div>  </div>
+</div>
+  </div>
+    </div></div> <!-- /#triptych, /#triptych-wrapper -->
+  
+  <div id="footer-wrapper"><div class="section">
+
+    
+    
+  </div></div> <!-- /.section, /#footer-wrapper -->
+
+</div></div> <!-- /#page, /#page-wrapper -->
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"aa6c0166f7","applicationID":"3569351","transactionName":"MlIAbUNYDxVUVRBeWQsYI1pFUA4IGlgLU1M6RwNeVGYXD1BB","queueTime":0,"applicationTime":175,"atts":"HhUDGwtCHBs=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

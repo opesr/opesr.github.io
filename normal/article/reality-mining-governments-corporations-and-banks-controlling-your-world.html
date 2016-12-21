@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-998.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+<link rel="shortlink" href="/node/91" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="/article/reality-mining-governments-corporations-and-banks-controlling-your-world" />
+  <title>Reality Mining: Governments, Corporations, and Banks controlling your world | OpESR</title>
+  <link type="text/css" rel="stylesheet" href="/sites/default/files/css/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/sites/default/files/css/css_xi_BRWGJrI1YNPkmKHvIQffmbwzxHXwWoqWT2ZHqPo4.css" media="screen" />
+<link type="text/css" rel="stylesheet" href="/sites/default/files/css/css_0_KYL24ZFbw2f7LbtKfXhnOyQoZOKYWHiXsWj2DCPK8.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/sites/default/files/css/css_7_nIe9s9x7xDr3xevw0X_MvPGE877wzuC0A8oz6u2aQ.css" media="all" />
+
+<!--[if lt IE 8]>
+<link type="text/css" rel="stylesheet" href="/sites/default/files/css/css_VyKHcoC2vkE6vSZy1096yGnGRXchk2qXI7pn80r5cvw.css" media="all" />
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="/sites/default/files/css/css_24VwYIeQPnPJg9p4mvTlo-SPhof77pbbsMlbHgUmW90.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/sites/default/files/css/css_2THG1eGiBIizsWFeexsNe1iDifJ00QRS9uSd03rY9co.css" media="print" />
+
+<!--[if lte IE 7]>
+<link type="text/css" rel="stylesheet" href="/themes/bartik/css/ie.css?" media="all" />
+<![endif]-->
+
+<!--[if IE 6]>
+<link type="text/css" rel="stylesheet" href="/themes/bartik/css/ie6.css?" media="all" />
+<![endif]-->
+  <script type="text/javascript" src="/sites/default/files/js/js_Xjzh1hVfcgVAixhmmB6Go8TUMPOiprA-2vkC-oWXARQ.js"></script>
+<script type="text/javascript" src="/sites/default/files/js/js_CnVjeK75WybhZPt5LIjxPFFChsSvirFJZ4QJHLcK6Rw.js"></script>
+<script type="text/javascript" src="/sites/default/files/js/js_X0oRoJDG3zwPG_dGqqLX5v1FaNVaVAMoFcdJGSRFRVM.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"bartik","theme_token":"wl96NUsYgU2M6MsoeL4SvwHhIthVZ_8zlkIGjwhRbH0","js":{"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/libraries\/colorbox\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/modules\/media_gallery\/colorbox-display.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/libraries\/colorbox\/example1\/colorbox.css":1,"sites\/all\/modules\/calendar\/css\/calendar_multiday.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/media_gallery\/media_gallery.css":1,"sites\/all\/modules\/media_gallery\/media_gallery.ie7.css":1,"themes\/bartik\/css\/layout.css":1,"themes\/bartik\/css\/style.css":1,"themes\/bartik\/css\/colors.css":1,"themes\/bartik\/css\/print.css":1,"themes\/bartik\/css\/ie.css":1,"themes\/bartik\/css\/ie6.css":1}}});
+//--><!]]>
+</script>
+</head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-91 node-type-article triptych" >
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+    <div id="page-wrapper"><div id="page">
+
+  <div id="header" class="without-secondary-menu"><div class="section clearfix">
+
+    
+          <div id="name-and-slogan">
+
+                              <div id="site-name">
+              <strong>
+                <a href="/" title="Home" rel="home"><span>OpESR</span></a>
+              </strong>
+            </div>
+                  
+                  <div id="site-slogan">
+            Operation Empire State Rebellion          </div>
+        
+      </div> <!-- /#name-and-slogan -->
+    
+    
+          <div id="main-menu" class="navigation">
+        <h2 class="element-invisible">Main menu</h2><ul id="main-menu-links" class="links clearfix"><li class="menu-227 first"><a href="/">Home</a></li>
+<li class="menu-434"><a href="/about" title="About OpESR">About</a></li>
+<li class="menu-656"><a href="/gallery-collections/galleries" title="">Galleries</a></li>
+<li class="menu-432 last"><a href="/location/map" title="Assembly Map">Map</a></li>
+</ul>      </div> <!-- /#main-menu -->
+    
+    
+  </div></div> <!-- /.section, /#header -->
+
+  
+  
+  <div id="main-wrapper" class="clearfix"><div id="main" class="clearfix">
+
+          <div id="breadcrumb"><h2 class="element-invisible">You are here</h2><div class="breadcrumb"><a href="/">Home</a></div></div>
+    
+    
+    <div id="content" class="column"><div class="section">
+            <a id="main-content"></a>
+                    <h1 class="title" id="page-title">
+          Reality Mining: Governments, Corporations, and Banks controlling your world        </h1>
+                          <div class="tabs">
+                  </div>
+                          <div class="region region-content">
+    <div id="block-system-main" class="block block-system">
+
+    
+  <div class="content">
+    <div id="node-91" class="node node-article node-promoted node-full clearfix" about="/article/reality-mining-governments-corporations-and-banks-controlling-your-world" typeof="sioc:Item foaf:Document">
+
+      <span property="dc:title" content="Reality Mining: Governments, Corporations, and Banks controlling your world" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>
+      <div class="meta submitted">
+        <div class="user-picture">
+    <img typeof="foaf:Image" src="/sites/default/files/styles/thumbnail/public/pictures/picture-1615-1367988732.jpg" alt="GaryWebb72&#039;s picture" title="GaryWebb72&#039;s picture" />  </div>
+      <span property="dc:date dc:created" content="2014-07-11T19:16:27-05:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" about="/users/garywebb72" typeof="sioc:UserAccount" property="foaf:name" datatype="">GaryWebb72</span> on Fri, 2014-07-11 19:16</span>    </div>
+  
+  <div class="content clearfix">
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>As a people we always like to jump on the technological bandwagon and do not ask any questions about the product. The mobile phone has seemingly taken over the spot light as it is something that almost 99% of people carry on them on a daily basis. There has been a huge push over the years for people to get mobile phones. The Obama administration even offered free phones to people. Today’s mobile phone has morphed itself into what people call smart phones, which is equipped with GPS.  It is on a person day and night never turning it off.  </p>
+<p>It has been recently discovered that government agencies have been collecting mobile phone data for years. Everything from text messages, emails, and pictures. It is a perfect device to control and manipulate a population of people. By collecting this personal data from people, they can make predictions based on your personality, behaviors, and buying habits. Privacy as we know it is slowly fading way into existence.  Since it is quite evident that government agencies do not care about violating the people’s rights. What we have discovered is more than likely “just the tip of the ice berg” there are probably more horrors to be seen.  </p>
+<p>Ever since 9/11 the government has used terrorism as an excuse to pass any laws they please. Does anyone remember that Obama voted in favor of the domestic spying law? As more and more information comes out about the domestic spying, people will really start to see the damage that the Patriot Act did. What is even more devastating is that maybe about three people out of Congress actually read the Patriot Act before passing it.  </p>
+<p>In 2005 MIT published a paper called “Reality Mining: Sensing Complex Social Systems”.  In this paper they discuss an experiment using a system for sensing complex social systems using data collected from one hundred mobile phones in a six month time period.  They need to collect mass amounts of personal information to predict the human dynamic. This is why smart phones are so important to these corporations, universities, and agencies. To have full control one must be able to know the object better than the object knows itself. Here is a quote from the paper:  “The very nature of mobile phones makes them an ideal vehicle to study both individuals and organizations: people habitually carry their mobile phones with them and use them as a medium for much of their communication. In this paper we capture all the information to which the phone has access (with the exception of content from phone calls or text messages) and describe how it can be used to provide insight into both the individual and the collective.”  Experiments like these where definitely a precursor to the Edward Snowden leaks.  </p>
+<p>In 2007 the Congressional Research Service published a paper on “Government Access to Phone Calling Activity and Related Records: Legal Authorities”.  The only reason that paper was published was because of whistle blower Thomas Drake who leaked information regarding a program called Trailblazer which collected data through phones and emails. This was just a small sign of what was to come.<br />
+There people want to control every facet of life. They want to know your buying habits. They want to know what your beliefs are. They want to know your finances. They want to know what type of food you eat. Who you hang out with etc. Have a Facebook page? They are analyzing everything you say on there. There is no escape from this system.  The fact that the government wants to mine our “reality” so to speak is a dangerous idea. They will always claim the opposite of their intentions.<br />
+The mobile phone was the greatest invention to collect data from people 24/7 and track where they go. It is a handy device but not one that should be trusted. They can honestly track you on a daily basis. But that does not bother you right? You have nothing to hide? But that is not the point, is it? </p>
+<p>In each of the main sectors of life, our leaders are seeking to have it all controlled by a small group of corporations, government entities, and agencies.  In the financial sector they have crashed the economy. They have driven up prices and rigged the markets. Many countries started austerity and bail out packages. Of course those things only benefited the rich, the banks, and the politicians. This is why they are pushing for the Trans Pacific Partnership and many other free trade agreements. </p>
+<p>Economy</p>
+<p>We all know that the world bankers, government officials, and other various agencies have helped crash the economy. Which caused a small group of ultra-rich people to make even more money, and they took that money from the rest of the world’s working class. They gave themselves huge bonuses, rigged the markets, and outright laundered money. The media portrays these people as if they can do no wrong. The authorities merely fine them and none of the important people get arrested, only their patsies. </p>
+<p>In the finance industry there have been many papers published on a one global currency. Many people around the world have been calling for one. China themselves have called for a one global currency. The United States responded with negative; but many people within the US government want to take the dollar off as the global currency.  The United States is pushing more and more free trade agreements. This will hurry along a global currency. Once more countries want to be members of these free trade agreements, they will be more apt to agree to use a global currency. In theory this would be beneficial to a global economy. The only problem is the corruption aspect of a small group of people controlling everyone else.  It has been proven time and time again when power is given to a small group of people they will always abuse it.  It is also probably the new currency will be something like bitcoin but controlled by a central bank.  Having a global currency will make trade easy and payment easy.  Which in turn would make it easy to control the population using it; because everyone knows you control a country’s wages, you control that country. You control a country’s food, you control that country, you control a country’s conscience, and you can predict the future.</p>
+<p>Healthcare </p>
+<p>In the healthcare industry with our new healthcare system our actually heath information is going to be tied to the IRS. The government is forcing people to get health insurance, which would not be a bad idea if it is done right. They punish people for not having health insurance by taking a person’s tax return. If a person continues to not have health insurance the fine will double each year. The corporation that is operating what they are calling “Obamacare” is called SERCO Group. SERCO Group is a UK based corporation that operations private prisons, organizations, and provides military applications. SERCO Group is currently being investigated for fraud in the UK. They will also be going to court over allegations that SERCO employees raped female inmates at an immigrations prison that they operate. Why should the American people trust a corporation that has had many investigations and violations?  Why did we not model our healthcare system after Canada? Was it because the corporations would not be able to call the shots? Capitalism is great in theory just like communism. It does not work when Crony Capitalism occurs, where a small group of people control everything.   </p>
+<p>Big Pharma </p>
+<p>The pharmaceutical companies control modern day medicine. In the Western medicine things are treated not cured. The doctors prescribe drugs and chemicals for their patient’s aliments. There are many dangerous side effects of the drugs in American medicine. Many times we see doctors over prescribing drugs. It is a total shock that now America it is normal for an eight year old to be taking synthetic form of cocaine created by a pharmaceutical company. There always seems to be some new disease for Big Pharma to make a   pill for. For example a parent will take their children to the doctor and say my child’s legs won’t stop kicking at night. The doctor would say “oh well he has restless leg syndrome, give him these pills.” Then he spits out like twenty side effects from the drug.  Must we always go straight to the drugs before finding maybe a natural solution? When it comes to big profits and economics, yes. </p>
+<p>Education</p>
+<p>In other countries education is free if that person can pass the exams to receive that free education. Otherwise they are made to learn a trade or join the military. In the United States of America education is considered unimportant and only for the wealthy to receive. While other countries are giving free education to their people so their country can advance. The United States is busy enslaving and dumbing down their people. The United States wants the working class to be the slaves while the wealthy control everything. Is it no wonder that the wealthy receive better education, better food, and safer places to live. Here is the choice for the working class, either you are a slave or you die. Is this acceptable for you? For some it is.<br />
+In the education industry funding for education has been stripped and many schools go under funded. In one foul swoop the president said that education is most important; then turns around and cuts financial aid funding. They teach American children that debt is normal and required. Children learn that if they are of lower class people they must take loans and debts. It takes them years to achieve good “credit” which allows them to purchase shelter that they cannot afford. This is the same for education. A person in America must go into debt and essentially enter slavery to educate them.<br />
+There is an educational standard being pushed nationally by the Obama Administration. It is called Common Core. Many professors and educators have come out to say that it will essential “dumb” down our children if this program is used. They say it is below normal standards, which is already behind the rest of the world.  This program was funded and influence by the Bill and Melinda Gates Foundation. The Obama Administration endorsed it and bribed states with billions in government funds to implement the program. </p>
+<p>All of the intrusive laws and violations of our rights are just signs of what are so called leaders are trying to shape. There have been numerous calls by world leaders for a global government. Seeking to have a new order policed by one organization. Many people such as Gordon Brown, George H.W. Bush, Bill Clinton, Biden etc. spoke about a new world order. </p>
+<p>The American government does not care about advancing their people or country. They do not care about making things better, healthier, and more efficient. All the government, banks, and corporations care about is making money. If people get in the way of those profits, it is accepted that they will die. All that matters in countries like the United States is money and control. </p>
+<p>The people of the world are being attacked from all sides and all areas. It is imperative that we as the people of the world, the working class protect ourselves. It is quite obvious that violence is not the answer. For many reasons the United States government would welcome such measures for they have the upper hand in that area. But let us not get it “twisted” we need to protect ourselves but let us not instigate the violence. Let them do it. Let them show their true colors. It is now OUR time to take these people down. We all know someone, or work for someone in positions of power that we have witness what they are doing to the people. It is up to us to stop them. Tell the world the truth. Tell the world what is going on so we can come together and stop these greedy homicidal maniacs. This period of time is ours. We are taking back our planet. </p>
+<p>Glory to the revolution, in death we part.<br />
+Bless’em all, the long, tall, and the short; in a pig’s eye; our brothers and sisters who have come before us; sacrificing their lives and freedom; we bless you and thank you.<br />
+May the day come that we can look in our children’s eyes and say “We fought for you, now fight for us” </p>
+<p>DOX </p>
+<p><a href="http://www.mediafire.com/view/1cd0rfx7d81w33c/a567522.pdf">http://www.mediafire.com/view/1cd0rfx7d81w33c/a567522.pdf</a><br />
+<a href="http://www.mediafire.com/view/7ug21hz36gt8hwj/a540978.pdf">http://www.mediafire.com/view/7ug21hz36gt8hwj/a540978.pdf</a><br />
+<a href="http://www.mediafire.com/view/c6is5eoh7pq4qs2/a533558.pdf">http://www.mediafire.com/view/c6is5eoh7pq4qs2/a533558.pdf</a><br />
+<a href="http://www.mediafire.com/view/6467f6kz636be4r/realitymining2.pdf">http://www.mediafire.com/view/6467f6kz636be4r/realitymining2.pdf</a><br />
+<a href="http://www.mediafire.com/view/ru52fm9c03tw6b2/a537330.pdf">http://www.mediafire.com/view/ru52fm9c03tw6b2/a537330.pdf</a><br />
+<a href="http://www.mediafire.com/view/9iftd6t78r38j8c/a512601.pdf">http://www.mediafire.com/view/9iftd6t78r38j8c/a512601.pdf</a></p>
+</div></div></div><div class="field field-name-field-tags field-type-taxonomy-term-reference field-label-above clearfix"><h3 class="field-label">Tags: </h3><ul class="links"><li class="taxonomy-term-reference-0" rel="dc:subject"><a href="/tags/opesr" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">OpESR</a></li><li class="taxonomy-term-reference-1" rel="dc:subject"><a href="/tags/anonymous" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">Anonymous</a></li><li class="taxonomy-term-reference-2" rel="dc:subject"><a href="/tags/nsa" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">NSA</a></li><li class="taxonomy-term-reference-3" rel="dc:subject"><a href="/tags/global-control" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">Global Control</a></li></ul></div>  </div>
+
+      <div class="link-wrapper">
+      <ul class="links inline"><li class="comment_forbidden first"><span><a href="/user/login?destination=node/91%23comment-form">Log in</a> to post comments</span></li>
+<li class="tweet_Twitter last"><a href="http://twitter.com/?status=Reality%20Min%E2%80%A6%20http%3A//live-opesr.pantheonsite.io/article/reality-mining-governments-corporations-and-banks-controlling-your-world%20via%20%40Op_ESR" class="tweet" rel="nofollow" target="_blank"><img typeof="foaf:Image" src="/sites/all/modules/tweet/twitter.png" alt="Post to Twitter" title="Post to Twitter" /> Post to Twitter</a></li>
+</ul>    </div>
+  
+  
+</div>
+  </div>
+</div>
+  </div>
+      
+    </div></div> <!-- /.section, /#content -->
+
+    
+  </div></div> <!-- /#main, /#main-wrapper -->
+
+      <div id="triptych-wrapper"><div id="triptych" class="clearfix">
+        <div class="region region-triptych-first">
+    <div id="block-media-gallery-7" class="block block-media-gallery">
+
+    <h2>OpESR</h2>
+  
+  <div class="content">
+    <div id="node-7" class="node node-media-gallery clearfix" about="/gallery/opesr" typeof="sioc:Item foaf:Document">
+
+        <h2>
+      <a href="/gallery/opesr"></a>
+    </h2>
+    <span property="dc:title" content="OpESR" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>
+  
+  <div class="content clearfix">
+    <div class="field field-name-media-gallery-media field-type-media field-label-hidden clearfix media-gallery-media mg-col mg-col-2"><div class="field-items"><div class="field-item even" id="media-gallery-media-0"><div class="media-gallery-item-wrapper"><div class="media-gallery-item"><div class="top"><div class="top-inset-1"><div class="top-inset-2"></div></div></div><div class="gallery-thumb-outer"><div class="gallery-thumb-inner"><a href="/media-gallery/detail/7/80" class="media-gallery-thumb cbEnabled"><img typeof="foaf:Image" src="/sites/default/files/styles/media_gallery_thumbnail/public/media-youtube/RCX8RBGZSTg.jpg" width="450" height="450" alt="Anonymous - The Bankers Are The Problem" /></a></div></div><div class="bottom"><div class="bottom-inset-1"><div class="bottom-inset-2"></div></div></div></div></div></div><div class="field-item odd" id="media-gallery-media-1"><div class="media-gallery-item-wrapper"><div class="media-gallery-item"><div class="top"><div class="top-inset-1"><div class="top-inset-2"></div></div></div><div class="gallery-thumb-outer"><div class="gallery-thumb-inner"><a href="/media-gallery/detail/7/24" class="media-gallery-thumb cbEnabled"><img typeof="foaf:Image" src="/sites/default/files/styles/media_gallery_thumbnail/public/media-youtube/sO3lnIC4bCE.jpg" width="450" height="450" alt="sO3lnIC4bCE" /></a></div></div><div class="bottom"><div class="bottom-inset-1"><div class="bottom-inset-2"></div></div></div></div></div></div><div class="field-item even" id="media-gallery-media-2"><div class="media-gallery-item-wrapper"><div class="media-gallery-item"><div class="top"><div class="top-inset-1"><div class="top-inset-2"></div></div></div><div class="gallery-thumb-outer"><div class="gallery-thumb-inner"><a href="/media-gallery/detail/7/23" class="media-gallery-thumb cbEnabled"><img typeof="foaf:Image" src="/sites/default/files/styles/media_gallery_thumbnail/public/media-youtube/CLzI3Qysa50.jpg" width="450" height="450" alt="CLzI3Qysa50" /></a></div></div><div class="bottom"><div class="bottom-inset-1"><div class="bottom-inset-2"></div></div></div></div></div></div><div class="field-item odd" id="media-gallery-media-3"><div class="media-gallery-item-wrapper"><div class="media-gallery-item"><div class="top"><div class="top-inset-1"><div class="top-inset-2"></div></div></div><div class="gallery-thumb-outer"><div class="gallery-thumb-inner"><a href="/media-gallery/detail/7/21" class="media-gallery-thumb cbEnabled"><img typeof="foaf:Image" src="/sites/default/files/styles/media_gallery_thumbnail/public/media-youtube/B7YnRzzGUpk.jpg" width="450" height="450" alt="B7YnRzzGUpk" /></a></div></div><div class="bottom"><div class="bottom-inset-1"><div class="bottom-inset-2"></div></div></div></div></div></div></div></div>  </div>
+
+  
+  
+</div>
+<div class="more-link"><a href="/gallery/opesr" title="Show the complete gallery">More</a></div>  </div>
+</div>
+  </div>
+        <div class="region region-triptych-middle">
+    <div id="block-media-gallery-9" class="block block-media-gallery">
+
+    <h2>Occupy</h2>
+  
+  <div class="content">
+    <div id="node-9" class="node node-media-gallery clearfix" about="/gallery/occupy" typeof="sioc:Item foaf:Document">
+
+        <h2>
+      <a href="/gallery/occupy"></a>
+    </h2>
+    <span property="dc:title" content="Occupy" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>
+  
+  <div class="content clearfix">
+    <div class="field field-name-media-gallery-media field-type-media field-label-hidden clearfix media-gallery-media mg-col mg-col-2"><div class="field-items"><div class="field-item even" id="media-gallery-media-0"><div class="media-gallery-item-wrapper"><div class="media-gallery-item"><div class="top"><div class="top-inset-1"><div class="top-inset-2"></div></div></div><div class="gallery-thumb-outer"><div class="gallery-thumb-inner"><a href="/media-gallery/detail/9/54" class="media-gallery-thumb cbEnabled"><img typeof="foaf:Image" src="/sites/default/files/styles/media_gallery_thumbnail/public/media-youtube/u49U_jzn6GQ.jpg" width="450" height="450" alt="u49U_jzn6GQ" /></a></div></div><div class="bottom"><div class="bottom-inset-1"><div class="bottom-inset-2"></div></div></div></div></div></div><div class="field-item odd" id="media-gallery-media-1"><div class="media-gallery-item-wrapper"><div class="media-gallery-item"><div class="top"><div class="top-inset-1"><div class="top-inset-2"></div></div></div><div class="gallery-thumb-outer"><div class="gallery-thumb-inner"><a href="/media-gallery/detail/9/34" class="media-gallery-thumb cbEnabled"><img typeof="foaf:Image" src="/sites/default/files/styles/media_gallery_thumbnail/public/media-youtube/Xb9mJsiDJ7k.jpg" width="450" height="450" alt="Xb9mJsiDJ7k" /></a></div></div><div class="bottom"><div class="bottom-inset-1"><div class="bottom-inset-2"></div></div></div></div></div></div><div class="field-item even" id="media-gallery-media-2"><div class="media-gallery-item-wrapper"><div class="media-gallery-item"><div class="top"><div class="top-inset-1"><div class="top-inset-2"></div></div></div><div class="gallery-thumb-outer"><div class="gallery-thumb-inner"><a href="/media-gallery/detail/9/35" class="media-gallery-thumb cbEnabled"><img typeof="foaf:Image" src="/sites/default/files/styles/media_gallery_thumbnail/public/media-youtube/mW_nDBKybVg.jpg" width="450" height="450" alt="mW_nDBKybVg" /></a></div></div><div class="bottom"><div class="bottom-inset-1"><div class="bottom-inset-2"></div></div></div></div></div></div><div class="field-item odd" id="media-gallery-media-3"><div class="media-gallery-item-wrapper"><div class="media-gallery-item"><div class="top"><div class="top-inset-1"><div class="top-inset-2"></div></div></div><div class="gallery-thumb-outer"><div class="gallery-thumb-inner"><a href="/media-gallery/detail/9/37" class="media-gallery-thumb cbEnabled"><img typeof="foaf:Image" src="/sites/default/files/styles/media_gallery_thumbnail/public/media-youtube/LhhTvK2etNs.jpg" width="450" height="450" alt="LhhTvK2etNs" /></a></div></div><div class="bottom"><div class="bottom-inset-1"><div class="bottom-inset-2"></div></div></div></div></div></div></div></div>  </div>
+
+  
+  
+</div>
+<div class="more-link"><a href="/gallery/occupy" title="Show the complete gallery">More</a></div>  </div>
+</div>
+  </div>
+        <div class="region region-triptych-last">
+    <div id="block-media-gallery-53" class="block block-media-gallery">
+
+    <h2>FTP</h2>
+  
+  <div class="content">
+    <div id="node-53" class="node node-media-gallery node-promoted clearfix" about="/gallery/ftp" typeof="sioc:Item foaf:Document">
+
+        <h2>
+      <a href="/gallery/ftp"></a>
+    </h2>
+    <span property="dc:title" content="FTP" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>
+  
+  <div class="content clearfix">
+    <div class="field field-name-media-gallery-media field-type-media field-label-hidden clearfix media-gallery-media mg-col mg-col-2"><div class="field-items"><div class="field-item even" id="media-gallery-media-0"><div class="media-gallery-item-wrapper"><div class="media-gallery-item"><div class="top"><div class="top-inset-1"><div class="top-inset-2"></div></div></div><div class="gallery-thumb-outer"><div class="gallery-thumb-inner"><a href="/media-gallery/detail/53/76" class="media-gallery-thumb cbEnabled"><img typeof="foaf:Image" src="/sites/default/files/styles/media_gallery_thumbnail/public/media-youtube/GksTJeB5J3E.jpg" width="450" height="450" alt="Folder 01, Det. Pierre (Broadway &amp; Cortland) VIDEO: M2U00011" /></a></div></div><div class="bottom"><div class="bottom-inset-1"><div class="bottom-inset-2"></div></div></div></div></div></div><div class="field-item odd" id="media-gallery-media-1"><div class="media-gallery-item-wrapper"><div class="media-gallery-item"><div class="top"><div class="top-inset-1"><div class="top-inset-2"></div></div></div><div class="gallery-thumb-outer"><div class="gallery-thumb-inner"><a href="/media-gallery/detail/53/75" class="media-gallery-thumb cbEnabled"><img typeof="foaf:Image" src="/sites/default/files/styles/media_gallery_thumbnail/public/media-youtube/Y3OCtfanNx4.jpg" width="450" height="450" alt="Folder 01, Det. Pierre (Broadway &amp; Cortland) VIDEO: M2U00012" /></a></div></div><div class="bottom"><div class="bottom-inset-1"><div class="bottom-inset-2"></div></div></div></div></div></div><div class="field-item even" id="media-gallery-media-2"><div class="media-gallery-item-wrapper"><div class="media-gallery-item"><div class="top"><div class="top-inset-1"><div class="top-inset-2"></div></div></div><div class="gallery-thumb-outer"><div class="gallery-thumb-inner"><a href="/media-gallery/detail/53/74" class="media-gallery-thumb cbEnabled"><img typeof="foaf:Image" src="/sites/default/files/styles/media_gallery_thumbnail/public/media-youtube/i2lUKOV-qA0.jpg" width="450" height="450" alt="Folder 09, P.O. Telese 1 of 2 (Park Eviction): VIDEO: M2U00010" /></a></div></div><div class="bottom"><div class="bottom-inset-1"><div class="bottom-inset-2"></div></div></div></div></div></div><div class="field-item odd" id="media-gallery-media-3"><div class="media-gallery-item-wrapper"><div class="media-gallery-item"><div class="top"><div class="top-inset-1"><div class="top-inset-2"></div></div></div><div class="gallery-thumb-outer"><div class="gallery-thumb-inner"><a href="/media-gallery/detail/53/73" class="media-gallery-thumb cbEnabled"><img typeof="foaf:Image" src="/sites/default/files/styles/media_gallery_thumbnail/public/media-youtube/fTRKS_cQ_gk.jpg" width="450" height="450" alt="Folder 09, P.O. Telese 1 of 2 (Park Eviction): VIDEO: 20111115010652" /></a></div></div><div class="bottom"><div class="bottom-inset-1"><div class="bottom-inset-2"></div></div></div></div></div></div></div></div>  </div>
+
+  
+  
+</div>
+<div class="more-link"><a href="/gallery/ftp" title="Show the complete gallery">More</a></div>  </div>
+</div>
+  </div>
+    </div></div> <!-- /#triptych, /#triptych-wrapper -->
+  
+  <div id="footer-wrapper"><div class="section">
+
+    
+    
+  </div></div> <!-- /.section, /#footer-wrapper -->
+
+</div></div> <!-- /#page, /#page-wrapper -->
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"aa6c0166f7","applicationID":"3569351","transactionName":"MlIAbUNYDxVUVRBeWQsYI1pFUA4IGlgLU1M6RwNeVGYXD1BB","queueTime":0,"applicationTime":116,"atts":"HhUDGwtCHBs=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
